@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background: #F9DADA;
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+// img{
+//     max-width: 654px;
+//     max-height: 368px;
+// }
+a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    // margin-left: 15px;
+
+}
+a:hover {
+    color: white;
+}
+
+#logo:hover:before {
+    content: 'Joris';
+}
+
+#logo:before {
+    content: 'Jisro';
+}
+
+h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+}
+
+h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    color: #000000;
+}
+
+h3 {
+    flex: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-left: 40px;
+}
+
+
+@import "home";
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//     h3 {
+//         font-size: 12px;
+//     }
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//     h3 {
+//         font-size: 14px;
+//     }
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//     h3 {
+//         font-size: 16px;
+//     }
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//     h3 {
+//         font-size: 20px;
+//     }
+// }

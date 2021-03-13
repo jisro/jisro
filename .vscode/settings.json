@@ -1,0 +1,22 @@
+{
+    "liveServer.settings.proxy": {
+        "enable": true,
+        "baseUri": "/",
+        "proxyUri": "http://127.0.0.1:5500"
+    },
+    "ftp-simple.remote-workspace": "C:\\Users\\Joris\\Documents\\Jisro",
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "explorer.confirmDragAndDrop": false,
+    "liveServer.settings.ignoreFiles": [
+
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.ts"
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.colorCustomizations": {},
+    "materialTheme.accent": "Remove accents",
+    "explorer.confirmDelete": false,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+}
