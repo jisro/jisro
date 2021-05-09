@@ -1,13 +1,13 @@
 <template>
   <div class="content flex h-full w-full">
     <div class="content2 h-full w-full flex content-center justify-center">
-      <div class="desc z-10 flex w-6/12 flex-col md:flex-row justify-center mx-6">
-        <div class="text-3xl md:text-8xl mx-12 font-bold">
-          Hi, I’m Joris. Often misinterpreted as Jisro<div class="rounded-full w-6 h-6 bg-primarytint inline-block"></div>
-        <div class="text-xl md:text-4xl mt-4 font-thin">
+      <div class="desc z-10 flex w-6/12 flex-col justify-center mx-6">
+        <div class="text-6xl font-bold">
+          Hi, I’m Joris. Often misinterpreted as Jisro
+        </div>
+        <div class="text-xl mx-2 mt-4">
           I’m a multidisicplinary designer and currently looking for job
           opportunities.
-        </div>
         </div>
       </div>
       <div class="img w-6/12 z-10 flex content-center justify-center">
