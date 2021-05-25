@@ -9,18 +9,22 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
-      primary: "#F9DADA",
+      primary: "#F5F7FB",
       primarytint: "#F5BBBB",
-      secondary: "#F4F1DE",
+      secondary: "#FED095",
       secondarytint: "#ECE7CC",
-      tertiary: "#DAF7F9",
-      tertiarytint: "#BBF2F5",
+      tertiary: "#B5CCFD",
+      quarternary: "#202041",
     },
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
     },
     variants: {
-      extend: {},
+      extend: {
+        backgroundImage: () => ({
+          "blob-pattern": "url('/src/assets/bg.svg')",
+        }),
+      },
     },
     plugins: [],
   },

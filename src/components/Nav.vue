@@ -1,10 +1,27 @@
 <template>
-  <div class="nav w-full h-12 flex justify-between mt-4">
-    <div class="logo w-6 h-full text-2xl ml-6 animate__animated animate__tada cursor-pointer" @click="isActive = !isActive" :class="{ active: isActive }" >Jisro</div>
-    <div class="navigation w-8/12 md:w-6/12 h-full text-base flex justify-around">
-      <p class="mx-5"><router-link to="/Home" class="opacity-70 hover:opacity-100">Home</router-link></p>
-      <p class="mx-5"><router-link to="/work" class="opacity-70 hover:opacity-100">Work</router-link></p>
-      <p class="mx-5"><router-link to="/about" class="opacity-70 hover:opacity-100">About</router-link></p>
+  <div class="nav w-full flex justify-between h-20">
+    <div
+      class="logo flex w-full mx-3 items-center text-2xl justify-start animate__animated animate__tada cursor-pointer"
+      @click="isActive = !isActive"
+      :class="{ active: isActive }"
+    >
+      <router-link to="/" class="opacity-70 hover:opacity-100"
+        >Jisro</router-link
+      >
+    </div>
+    <div
+      class="navigation md:w-6/12 text-base flex items-center justify-end mx-3"
+    >
+      <div class="hover:bg-tertiary w-24 h-20 flex justify-center items-center">
+        <router-link to="/work" class="opacity-70 hover:opacity-100"
+          >WERK</router-link
+        >
+      </div>
+      <div class="hover:bg-tertiary w-24 h-20 flex justify-center items-center">
+        <router-link to="/about" class="opacity-70 hover:opacity-100"
+          >CONTACT</router-link
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -12,14 +29,12 @@
 <script>
 export default {
   name: "Nav",
-  data: {
-    isActive: true
-  }
+  data: function () {
+    return {
+      isActive: true,
+    };
+  },
 };
 </script>
 
-<style scoped>
-.active {
-  height: 24px;
-  background-color: beige;
-}</style>
+<style scoped></style>

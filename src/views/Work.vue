@@ -1,5 +1,5 @@
 <template>
-  <div class="content flex h-full w-full">
+  <div class="content flex h-full w-full bg-blob-pattern bg-cover">
     <div class="content2 h-full w-full flex content-center justify-center">
       <div class="desc z-10 flex w-6/12 flex-col justify-center mx-6">
         <div class="text-6xl font-bold">

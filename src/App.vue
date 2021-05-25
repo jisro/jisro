@@ -1,21 +1,18 @@
 <template>
-  <div
-    class="wrapper h-screen w-full flex flex-col bg-primary overflow-y-hidden z-0"
-  >
-    <Nav />
+  <div class="wrapper w-full overflow-y text-quarternary z-0">
     <router-view to="/" />
   </div>
 </template>
 
 <script>
-import Nav from "@/components/Nav.vue";
-
 export default {
   name: "App",
-  components: { Nav },
-  data: {
-    isActive: false
-  }
+  components: {},
+  data: function () {
+    return {
+      isActive: false,
+    };
+  },
 };
 </script>
 
