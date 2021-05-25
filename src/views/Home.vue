@@ -164,7 +164,7 @@
           <div class="text-xl md:text-3xl font-thin">
             <br />
             hi@jisro.nl <br />
-            +31 6 232 454 01
+            <a href="tel:+31 6 232 454 01">+31 6 232 454 01</a>
           </div>
         </div>
       </div>
