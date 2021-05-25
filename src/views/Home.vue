@@ -146,7 +146,7 @@
       >
         <div class="text-3xl text-secondary md:text-8xl font-bold">
           Samenwerken?
-          <div class="text-xl text-secondary md:text-3xl font-thin">
+          <div id="contact" class="text-xl text-secondary md:text-3xl font-thin">
             Ik werk als freelancer voor Remoris. Drink een koffietje met ons.
           </div>
         </div>
