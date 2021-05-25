@@ -78,7 +78,7 @@
           <div class="text-xl md:text-3xl font-thin">
             Een praatmaatje voor kinderen met een taalachterstand.
           </div>
-          <div class="img w-full mt-24 w-10/12 md:w-6/">
+          <div class="img mt-24 md:w-6/">
             <img class="h-full" src="../assets/pom.svg" />
           </div>
         </div>
@@ -99,7 +99,7 @@
           <div class="text-xl md:text-3xl font-thin">
             Een smartphone app over lichaamsbewustzijn.
           </div>
-          <div class="img w-full mt-24 w-10/12 md:w-6/">
+          <div class="img mt-24 w-10/12 md:w-6/">
             <img class="h-full" src="../assets/soma.svg" />
           </div>
         </div>
@@ -118,7 +118,7 @@
         <div class="text-3xl md:text-8xl font-bold">
           skatemap
           <div class="text-xl md:text-3xl font-thin">Een app voor skaters.</div>
-          <div class="img w-full mt-24 w-10/12 md:w-6/">
+          <div class="img mt-24 md:w-6/">
             <img class="h-full" src="../assets/skatemap.svg" />
           </div>
         </div>
@@ -171,7 +171,7 @@
     </div>
 
     <div
-      class="copyright h-8/12 mt-48 flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
+      class="copyright h-8/12 mt-48 flex content-center md:justify-center flex-col md:flex-row md:mt-0"
     >
       <div
         class="desc w-11/12 flex h-full mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
