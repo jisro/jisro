@@ -12,9 +12,12 @@ module.exports = {
       primary: "#F5F7FB",
       primarytint: "#F5BBBB",
       secondary: "#FED095",
-      secondarytint: "#ECE7CC",
       tertiary: "#B5CCFD",
       quarternary: "#202041",
+      twee: "#F9A594",
+      drie: "#F99994",
+      vier: "#94B0F9",
+      vijf: "#FAA595",
     },
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],

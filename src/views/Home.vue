@@ -1,11 +1,11 @@
 <template>
-  <div class="content flex flex-col w-full">
+  <div class="content flex flex-col w-screen overflow-x-hidden bg-quarternary">
     <div
       id="intro"
-      class="nav w-screen fixed flex justify-between h-20 text-secondary"
+      class="nav w-screen fixed flex justify-between h-20 bg-quarternary text-secondary"
     >
       <div
-        class="logo flex w-full mx-3 items-center text-2xl justify-start animate__animated animate__tada cursor-pointer"
+        class="logo flex w-full mx-6 items-center text-2xl justify-start animate__animated animate__tada cursor-pointer"
       >
         <a v-scroll-to="'#intro'" class="opacity-70 hover:opacity-100">Jisro</a>
       </div>
@@ -23,27 +23,28 @@
       </div>
     </div>
     <div
-      class="content2 mt-48 mb-24 h-96 flex content-center md:justify-center flex-row md:flex-row"
+      class="intro h-screen content-center md:justify-center bg-secondary"
     >
+    <div class="flex">
       <div
-        class="desc w-10/12 flex h-64 md:h-full md:w-6/12 flex-row md:flex-col justify-start mx-6"
+        class="desc flex h-screen justify-center items-center mt-12 ml-6"
       >
-        <div class="introtext text-secondary text-5xl md:text-8xl font-bold">
+        <div class="introtext min-w-48 text-secondary text-5xl md:text-8xl font-bold">
           <p class="text-quarternary">Hi,</p>
           <br />
-          <p class="text-quarternary">ik ben</p>
+          <p class="text-quarternary w-48">ik ben</p>
           <br />Joris.
-          <div class="outline w-64 h-16 -my-12 -mx-24"></div>
+          <div class="outline w-64 h-16 -my-12 -mx-28"></div>
           <div class="text-lg md:text-3xl font-thin mt-20 text-quarternary">
             Ik ben een UI/UX ontwerper op zoek naar een baan.
           </div>
         </div>
       </div>
-      <div class="img w-10/12 md:w-6/12">
+      <div class="img flex justify-center items-center ml-4">
         <svg
-          class="jisro w-72 -mx-28"
+         class="h-96 w-96 flex items-start"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 640 480"
+          viewBox="260 0 640 480"
         >
           <path
             d="M667.9 389.3c-18-18.1-38.4-33.8-61-45.6-21.9-11.5-45.1-19.9-66.8-31.9-12.4-6.9-24.5-14.4-36.2-22.5-1.6-1.1-3.1 1.5-1.5 2.6 26.8 18.5 55.4 33 85.1 46 29.5 12.9 55.6 30.8 78.3 53.6 1.3 1.3 3.5-.8 2.1-2.2zM314 258.4c-4.2 7.1-9.2 13.7-15.5 19.1-4.4 3.8-11.2 6.4-14.1 11.7-6.3 11.4 5.7 25.4 12.1 33.9 17.3 23.3 34.7 48.2 58 66.2 19.3 14.9 43.1 22.5 67.4 22.7 28.5.2 54.6-12.5 73-33.9 9.2-10.6 16.6-22.8 18.9-36.9 2.5-15.3-1.1-30.8-9.1-44-1-1.7-3.6-.1-2.6 1.5 7.1 11.9 10.7 25.7 9 39.6-1.6 13-7.8 24.7-16 34.8-16.7 20.5-39.8 34.1-66.7 35.8-23 1.4-46.9-4.6-66.1-17.4-21.9-14.6-38.3-36.4-54-57.2-5-6.7-10.2-13.3-15-20.2-4.1-5.9-9.7-14.4-7.1-21.9 1.5-4.2 5.9-6.2 9.3-8.6 2.2-1.6 4.3-3.2 6.3-5 5.9-5.3 10.6-11.7 14.6-18.5 1.2-1.8-1.4-3.3-2.4-1.7z"
@@ -62,16 +63,17 @@
           />
         </svg>
       </div>
+     
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.9326 0L25 12L12.0674 0H0L25.1244 23.25L50.2488 0H37.9326Z" fill="#202041"/>
+</svg>
+</a>
+      </div>
     </div>
-    <div id="pom" class="flex h-24 justify-center content-end">
-      <a class="down h-14 w-14 cursor-pointer" v-scroll-to="'#pom'"></a>
-    </div>
-
     <div
-      class="pom h-8/12 flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
+      class="pom h-screen bg-twee flex content-center justify-center flex-col md:flex-row"
     >
       <div
-        class="desc w-11/12 flex mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-start mx-6"
+        class="desc w-11/12 flex mb-24 md:w-6/12 flex-row md:flex-col justify-center mx-6"
       >
         <div class="text-3xl md:text-8xl font-bold">
           Pom
@@ -81,18 +83,18 @@
           <div class="img mt-24 md:w-6/">
             <img class="h-full" src="../assets/pom.svg" />
           </div>
-        </div>
         <div class="more w-20 h-full flex items-end">
           <img class="more cursor-pointer" src="../assets/more.svg" />
+        </div>
         </div>
       </div>
     </div>
 
     <div
-      class="soma h-8/12 flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
+      class="soma h-screen bg-drie flex content-center md:justify-center flex-col md:flex-row"
     >
       <div
-        class="desc w-11/12 flex mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-start mx-6"
+        class="desc w-11/12 flex mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
       >
         <div class="text-3xl md:text-8xl font-bold">
           SOMA
@@ -102,18 +104,18 @@
           <div class="img mt-24 w-10/12 md:w-6/">
             <img class="h-full" src="../assets/soma.svg" />
           </div>
-        </div>
         <div class="more w-20 h-full flex items-end">
           <img class="more cursor-pointer" src="../assets/more.svg" />
+        </div>
         </div>
       </div>
     </div>
 
     <div
-      class="skatemap h-8/12 flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
+      class="skatemap h-screen bg-vier flex content-center md:justify-center flex-col md:flex-row"
     >
       <div
-        class="desc w-11/12 flex mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-start mx-6"
+        class="desc w-11/12 flex mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
       >
         <div class="text-3xl md:text-8xl font-bold">
           skatemap
@@ -121,9 +123,9 @@
           <div class="img mt-24 md:w-6/">
             <img class="h-full" src="../assets/skatemap.svg" />
           </div>
-        </div>
         <div class="more w-20 h-full flex items-end">
           <img class="more cursor-pointer" src="../assets/more.svg" />
+        </div>
         </div>
       </div>
     </div>
@@ -142,7 +144,7 @@
       class="samenwerken h-10/12 flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
     >
       <div
-        class="desc w-11/12 flex mb-48 md:h-full md:w-6/12 flex-row md:flex-col justify-start mx-6"
+        class="desc w-11/12 flex mb-48 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
       >
         <div class="text-3xl text-secondary md:text-8xl font-bold">
           Samenwerken?
@@ -171,7 +173,7 @@
     </div>
 
     <div
-      class="copyright h-8/12 mt-48 flex content-center md:justify-center flex-col md:flex-row md:mt-0"
+      class="copyright h-screen mt-48 flex content-center md:justify-center flex-col md:flex-row md:mt-0"
     >
       <div
         class="desc w-11/12 flex h-full mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
@@ -189,18 +191,18 @@ export default {
 </script>
 
 <style scoped>
-.content {
+/* .content {
   height: 3700px;
   background-image: url("../assets/bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
+} */
+/* 
 .nav {
   background-image: url("../assets/nav.svg");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .introtext {
   line-height: 2rem;
