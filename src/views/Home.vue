@@ -27,14 +27,14 @@
     >
     <div class="flex">
       <div
-        class="desc flex h-screen justify-center items-center mt-12 ml-6"
+        class="desc flex h-screen justify-center md:w-6/12 items-center mt-12 ml-6"
       >
-        <div class="introtext min-w-48 text-secondary text-5xl md:text-8xl font-bold">
-          <p class="text-quarternary">Hi,</p>
+        <div class="introtext text-secondary text-5xl md:text-8xl font-bold">
+          <p class="text-quarternary md:my-6">Hi,</p>
           <br />
-          <p class="text-quarternary w-48">ik ben</p>
+          <p class="text-quarternary md:my-6 md:w-96 w-48 md:mb-8">ik ben</p>
           <br />Joris.
-          <div class="outline w-64 h-16 -my-12 -mx-28"></div>
+          <div class="outline w-64 h-16 -my-12 -mx-28 md:w-96 md:h-28"></div>
           <div class="text-lg md:text-3xl font-thin mt-20 text-quarternary">
             Ik ben een UI/UX ontwerper op zoek naar een baan.
           </div>
@@ -42,7 +42,7 @@
       </div>
       <div class="img flex justify-center items-center ml-4">
         <svg
-         class="h-96 w-96 flex items-start"
+         class="h-96 w-96 md:w-11/12 flex items-start md:items-center"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="260 0 640 480"
         >
@@ -62,25 +62,29 @@
             d="M528.2 114.4c3.1-12 4.7-24.5 3.6-36.8-1.2-12.5-3.1-25-4.9-37.4-.3-1.9-3.2-1.1-2.9.8 1.7 12.2 3.6 24.4 4.8 36.6 1.2 12.1-.4 24.3-3.5 36-.5 1.9 2.4 2.7 2.9.8z"
           />
         </svg>
+        
       </div>
-     
+      </div>
+    <div class="down -my-24 flex justify-center"><a class="cursor-pointer" v-scroll-to="'#pom'"><svg width="51" height="24" viewBox="0 0 51 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9326 0L25 12L12.0674 0H0L25.1244 23.25L50.2488 0H37.9326Z" fill="#202041"/>
-</svg>
-</a>
-      </div>
+</svg></a>
+</div>
     </div>
     <div
+    id="pom"
       class="pom h-screen bg-twee flex content-center justify-center flex-col md:flex-row"
     >
       <div
         class="desc w-11/12 flex mb-24 md:w-6/12 flex-row md:flex-col justify-center mx-6"
       >
-        <div class="text-3xl md:text-8xl font-bold">
+        <div v-scroll-reveal.reset class="text-3xl md:text-8xl font-bold">
           Pom
-          <div class="text-xl md:text-3xl font-thin">
+          <div 
+          class="text-xl md:text-3xl font-thin">
             Een praatmaatje voor kinderen met een taalachterstand.
           </div>
-          <div class="img mt-24 md:w-6/">
+          <div 
+          v-scroll-reveal.reset="{ delay: 300 }"class="img mt-24 md:w-6/">
             <img class="h-full" src="../assets/pom.svg" />
           </div>
         <div class="more w-20 h-full flex items-end">
@@ -91,17 +95,17 @@
     </div>
 
     <div
-      class="soma h-screen bg-drie flex content-center md:justify-center flex-col md:flex-row"
+      class="soma h-screen bg-drie flex content-center justify-center flex-col md:flex-row"
     >
       <div
-        class="desc w-11/12 flex mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
+        class="desc w-11/12 flex mb-24 md:w-6/12 flex-row md:flex-col justify-center mx-6"
       >
         <div class="text-3xl md:text-8xl font-bold">
           SOMA
           <div class="text-xl md:text-3xl font-thin">
             Een smartphone app over lichaamsbewustzijn.
           </div>
-          <div class="img mt-24 w-10/12 md:w-6/">
+          <div v-scroll-reveal.reset="{ delay: 500 }"class="img mt-24 w-10/12 md:w-6/">
             <img class="h-full" src="../assets/soma.svg" />
           </div>
         <div class="more w-20 h-full flex items-end">
@@ -112,7 +116,7 @@
     </div>
 
     <div
-      class="skatemap h-screen bg-vier flex content-center md:justify-center flex-col md:flex-row"
+      class="skatemap h-screen bg-vier flex content-center justify-center flex-col md:flex-row"
     >
       <div
         class="desc w-11/12 flex mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
@@ -131,7 +135,7 @@
     </div>
 
     <div
-      class="skatemap h-4/12 md:justify-end flex-row md:flex-row -my-6 md:mt-0"
+      class="skatemap h-4/12 md:justify-end flex-row md:flex-row md:mt-0"
     >
       <div class="img w-full flex justify-end">
         <a href="../assets/cv.pdf" download
@@ -141,7 +145,7 @@
     </div>
 
     <div
-      class="samenwerken h-10/12 flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
+      class="samenwerken h-24 flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
     >
       <div
         class="desc w-11/12 flex mb-48 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
@@ -156,7 +160,7 @@
     </div>
 
     <div
-      class="contact h-11/12 mb-24 flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
+      class="contact h-96 my-8 flex justify-center items-center flex-col md:flex-row bg-secondary"
     >
       <div
         class="desc w-12/12 flex md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
@@ -173,7 +177,7 @@
     </div>
 
     <div
-      class="copyright h-screen mt-48 flex content-center md:justify-center flex-col md:flex-row md:mt-0"
+      class="copyright h-8 flex content-center md:justify-center flex-col md:flex-row md:mt-0 text-secondary"
     >
       <div
         class="desc w-11/12 flex h-full mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
@@ -214,8 +218,4 @@ export default {
   background-size: cover;
 }
 
-.down {
-  background-repeat: no-repeat;
-  background-image: url("../assets/down.svg");
-}
 </style>
