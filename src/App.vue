@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper w-full overflow-y text-quarternary z-0">
+  <div class="wrapper w-full overflow-y overflow-x-hidden text-quarternary z-0">
     <router-view to="/" />
   </div>
 </template>

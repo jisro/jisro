@@ -12,10 +12,10 @@
       <div
         class="navigation md:w-6/12 text-base flex items-center justify-end mx-3"
       >
-        <div class="w-24 h-20 flex justify-center items-center cursor-pointer">
+        <div class="w-24 h-20 md:w-96 flex justify-center items-center cursor-pointer">
           <a v-scroll-to="'#pom'" class="opacity-70 hover:opacity-100">WERK</a>
         </div>
-        <div class="w-24 h-20 flex justify-center items-center cursor-pointer">
+        <div class="w-24 h-20 md:w-96 flex justify-center items-center cursor-pointer">
           <a v-scroll-to="'#contact'" to="" class="opacity-70 hover:opacity-100"
             >CONTACT</a
           >
@@ -32,10 +32,10 @@
         <div class="introtext text-secondary text-5xl md:text-8xl font-bold">
           <p class="text-quarternary md:my-6">Hi,</p>
           <br />
-          <p class="text-quarternary md:my-6 md:w-96 w-48 md:mb-8">ik ben</p>
+          <p class="text-quarternary md:mb-12 md:w-96 w-48 md:leading-9">ik ben</p>
           <br />Joris.
-          <div class="outline w-64 h-16 -my-12 -mx-28 md:w-96 md:h-28"></div>
-          <div class="text-lg md:text-3xl font-thin mt-20 text-quarternary">
+          <div class="outline w-64 h-16 -my-12 md:-my-20 -mx-28 md:-mx-36 md:w-96 md:h-32"></div><br><br><br>
+          <div class="text-lg md:text-3xl font-thin md:mt-20 text-quarternary">
             Ik ben een UI/UX ontwerper op zoek naar een baan.
           </div>
         </div>
@@ -75,19 +75,19 @@
       class="pom h-screen bg-twee flex content-center justify-center flex-col md:flex-row"
     >
       <div
-        class="desc w-11/12 flex mb-24 md:w-6/12 flex-row md:flex-col justify-center mx-6"
+        class="desc w-10/12 flex mb-24 md:w-6/12 flex-row md:flex-col justify-center mx-6"
       >
-        <div v-scroll-reveal.reset class="text-3xl md:text-8xl font-bold">
+        <div class="text-3xl md:text-8xl font-bold">
           Pom
           <div 
           class="text-xl md:text-3xl font-thin">
             Een praatmaatje voor kinderen met een taalachterstand.
           </div>
           <div 
-          v-scroll-reveal.reset="{ delay: 300 }"class="img mt-24 md:w-6/">
-            <img class="h-full" src="../assets/pom.svg" />
+          class="img mt-8 md:mt-24 md:w-6/">
+            <img v-scroll-reveal.reset="{ delay: 250 }" class="h-full" src="../assets/pom.svg" />
           </div>
-        <div class="more w-20 h-full flex items-end">
+        <div class="more w-20 h-20 flex items-end">
           <img class="more cursor-pointer" src="../assets/more.svg" />
         </div>
         </div>
@@ -95,18 +95,18 @@
     </div>
 
     <div
-      class="soma h-screen bg-drie flex content-center justify-center flex-col md:flex-row"
+      class="soma h-screen bg-drie flex items-center justify-center flex-col md:flex-row"
     >
       <div
-        class="desc w-11/12 flex mb-24 md:w-6/12 flex-row md:flex-col justify-center mx-6"
+        class="desc w-10/12 flex mb-24 md:w-6/12 flex-row md:flex-col justify-center items-center mx-6"
       >
         <div class="text-3xl md:text-8xl font-bold">
           SOMA
           <div class="text-xl md:text-3xl font-thin">
             Een smartphone app over lichaamsbewustzijn.
           </div>
-          <div v-scroll-reveal.reset="{ delay: 500 }"class="img mt-24 w-10/12 md:w-6/">
-            <img class="h-full" src="../assets/soma.svg" />
+          <div class="img mt-8 md:mt-24 w-10/12 md:w-6/">
+            <img v-scroll-reveal.reset="{ delay: 250 }" class="h-full" src="../assets/soma.svg" />
           </div>
         <div class="more w-20 h-full flex items-end">
           <img class="more cursor-pointer" src="../assets/more.svg" />
@@ -124,10 +124,10 @@
         <div class="text-3xl md:text-8xl font-bold">
           skatemap
           <div class="text-xl md:text-3xl font-thin">Een app voor skaters.</div>
-          <div class="img mt-24 md:w-6/">
-            <img class="h-full" src="../assets/skatemap.svg" />
+          <div class="img mt-8 md:mt-24 md:w-6/">
+            <img v-scroll-reveal.reset="{ delay: 250 }" class="h-full" src="../assets/skatemap.svg" />
           </div>
-        <div class="more w-20 h-full flex items-end">
+        <div class="more w-20 h-20 flex items-end">
           <img class="more cursor-pointer" src="../assets/more.svg" />
         </div>
         </div>
@@ -138,9 +138,9 @@
       class="skatemap h-4/12 md:justify-end flex-row md:flex-row md:mt-0"
     >
       <div class="img w-full flex justify-end">
-        <a href="../assets/cv.pdf" download
+        <pdf class="cv bg-drie rounded-xl" href="../assets/cv.pdf" 
           ><img class="h-full" src="../assets/cv.svg"
-        /></a>
+        /></pdf>
       </div>
     </div>
 
@@ -189,6 +189,7 @@
 </template>
 
 <script>
+ScrollReveal().reveal('.pom');
 export default {
   name: "Home",
 };
