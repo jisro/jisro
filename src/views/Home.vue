@@ -1,50 +1,48 @@
 <template>
   <div class="content flex flex-col w-screen overflow-x-hidden bg-quarternary">
+    
     <div
-      id="intro"
-      class="nav w-screen fixed flex justify-between h-20 bg-quarternary text-secondary"
+      class="intro h-screen flex flex-col justify-between bg-secondary"
+    >
+    <div
+      id="navigation"
+      class="nav w-screen flex justify-between h-20 font-semibold text-quarternary"
     >
       <div
         class="logo flex w-full mx-6 items-center text-2xl justify-start animate__animated animate__tada cursor-pointer"
       >
-        <a v-scroll-to="'#intro'" class="opacity-70 hover:opacity-100">Jisro</a>
+        <a v-scroll-to="'#navigation'" class="opacity-100 hover:opacity-70">Jisro</a>
       </div>
       <div
         class="navigation md:w-6/12 text-base flex items-center justify-end mx-3"
       >
         <div class="w-24 h-20 md:w-96 flex justify-center items-center cursor-pointer">
-          <a v-scroll-to="'#pom'" class="opacity-70 hover:opacity-100">WERK</a>
+          <a v-scroll-to="'#pom'" class="opacity-100 hover:opacity-70">Werk</a>
         </div>
         <div class="w-24 h-20 md:w-96 flex justify-center items-center cursor-pointer">
-          <a v-scroll-to="'#contact'" to="" class="opacity-70 hover:opacity-100"
-            >CONTACT</a
+          <a v-scroll-to="'#contact'" to="" class="opacity-100 hover:opacity-70"
+            >Contact</a
           >
         </div>
       </div>
     </div>
-    <div
-      class="intro h-screen content-center md:justify-center bg-secondary"
-    >
-    <div class="flex">
+    <div class="hi flex h-1/2 md:flex-shrink-0 justify-center">
       <div
-        class="desc flex h-screen justify-center md:w-6/12 items-center mt-12 ml-6"
+        class="desc md:items-end flex flex-col w-6/12 items-center md:w-6/12"
       >
-        <div class="introtext text-secondary text-5xl md:text-8xl font-bold">
-          <p class="text-quarternary md:my-6">Hi,</p>
-          <br />
-          <p class="text-quarternary md:mb-12 md:w-96 w-48 md:leading-9">ik ben</p>
-          <br />Joris.
-          <div class="outline w-64 h-16 -my-12 md:-my-20 -mx-28 md:-mx-36 md:w-96 md:h-32"></div><br><br><br>
-          <div class="text-lg md:text-3xl font-thin md:mt-20 text-quarternary">
-            Ik ben een UI/UX ontwerper op zoek naar een baan.
-          </div>
+        <div class="introtext ml-8 text-quarternary text-5xl lg:text-7xl font-bold">
+          <p class="header leading-tight md:leading-tight lg:text-9xl">Hi, <br> ik ben <br>Joris</p>
+          <br>
+          <p class="text-xl lg:text-4xl font-thin md:mt-8 text-quarternary">
+            Ik ben een UI/UX ontwerper <br> op zoek naar een baan.
+        </p>
         </div>
       </div>
-      <div class="img flex justify-center items-center ml-4">
+      <div class="img flex items-center w-6/12 md:w-1/2  fill-current">
         <svg
-         class="h-96 w-96 md:w-11/12 flex items-start md:items-center"
+         class="h-full md:w-8/12"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="260 0 640 480"
+          viewBox="240 0 340 480"
         >
           <path
             d="M667.9 389.3c-18-18.1-38.4-33.8-61-45.6-21.9-11.5-45.1-19.9-66.8-31.9-12.4-6.9-24.5-14.4-36.2-22.5-1.6-1.1-3.1 1.5-1.5 2.6 26.8 18.5 55.4 33 85.1 46 29.5 12.9 55.6 30.8 78.3 53.6 1.3 1.3 3.5-.8 2.1-2.2zM314 258.4c-4.2 7.1-9.2 13.7-15.5 19.1-4.4 3.8-11.2 6.4-14.1 11.7-6.3 11.4 5.7 25.4 12.1 33.9 17.3 23.3 34.7 48.2 58 66.2 19.3 14.9 43.1 22.5 67.4 22.7 28.5.2 54.6-12.5 73-33.9 9.2-10.6 16.6-22.8 18.9-36.9 2.5-15.3-1.1-30.8-9.1-44-1-1.7-3.6-.1-2.6 1.5 7.1 11.9 10.7 25.7 9 39.6-1.6 13-7.8 24.7-16 34.8-16.7 20.5-39.8 34.1-66.7 35.8-23 1.4-46.9-4.6-66.1-17.4-21.9-14.6-38.3-36.4-54-57.2-5-6.7-10.2-13.3-15-20.2-4.1-5.9-9.7-14.4-7.1-21.9 1.5-4.2 5.9-6.2 9.3-8.6 2.2-1.6 4.3-3.2 6.3-5 5.9-5.3 10.6-11.7 14.6-18.5 1.2-1.8-1.4-3.3-2.4-1.7z"
@@ -65,29 +63,31 @@
         
       </div>
       </div>
-    <div class="down -my-24 flex justify-center"><a class="cursor-pointer" v-scroll-to="'#pom'"><svg width="51" height="24" viewBox="0 0 51 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="down flex justify-center"><a class="cursor-pointer" v-scroll-to="'#pom'"><svg width="51" height="24" viewBox="0 0 51 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9326 0L25 12L12.0674 0H0L25.1244 23.25L50.2488 0H37.9326Z" fill="#202041"/>
 </svg></a>
 </div>
     </div>
+
+
     <div
     id="pom"
       class="pom h-screen bg-twee flex content-center justify-center flex-col md:flex-row"
     >
       <div
-        class="desc w-10/12 flex mb-24 md:w-6/12 flex-row md:flex-col justify-center mx-6"
+        class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
       >
-        <div class="text-3xl md:text-8xl font-bold">
+        <div class="text-3xl w-10/12 h-8/12 md:text-8xl font-bold">
           Pom
           <div 
           class="text-xl md:text-3xl font-thin">
             Een praatmaatje voor kinderen met een taalachterstand.
           </div>
           <div 
-          class="img mt-8 md:mt-24 md:w-6/">
+          class="img flex h-96 mt-8">
             <img v-scroll-reveal.reset="{ delay: 250 }" class="h-full" src="../assets/pom.svg" />
           </div>
-        <div class="more w-20 h-20 flex items-end">
+        <div class="more flex-col w-full h-6 flex items-end">
           <img class="more cursor-pointer" src="../assets/more.svg" />
         </div>
         </div>
@@ -95,20 +95,20 @@
     </div>
 
     <div
-      class="soma h-screen bg-drie flex items-center justify-center flex-col md:flex-row"
+      class="soma h-screen bg-drie flex content-center justify-center flex-col md:flex-row"
     >
       <div
-        class="desc w-10/12 flex mb-24 md:w-6/12 flex-row md:flex-col justify-center items-center mx-6"
+        class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
       >
-        <div class="text-3xl md:text-8xl font-bold">
+        <div class="text-3xl w-10/12 h-8/12 md:text-8xl font-bold">
           SOMA
           <div class="text-xl md:text-3xl font-thin">
             Een smartphone app over lichaamsbewustzijn.
           </div>
-          <div class="img mt-8 md:mt-24 w-10/12 md:w-6/">
+          <div class="img flex justify-center h-96 mt-8">
             <img v-scroll-reveal.reset="{ delay: 250 }" class="h-full" src="../assets/soma.svg" />
           </div>
-        <div class="more w-20 h-full flex items-end">
+        <div class="more flex-col w-full h-6 flex items-end">
           <img class="more cursor-pointer" src="../assets/more.svg" />
         </div>
         </div>
@@ -119,15 +119,15 @@
       class="skatemap h-screen bg-vier flex content-center justify-center flex-col md:flex-row"
     >
       <div
-        class="desc w-11/12 flex mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
+        class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
       >
-        <div class="text-3xl md:text-8xl font-bold">
+        <div class="text-3xl w-10/12 h-8/12 md:text-8xl font-bold">
           skatemap
           <div class="text-xl md:text-3xl font-thin">Een app voor skaters.</div>
-          <div class="img mt-8 md:mt-24 md:w-6/">
+          <div class="img flex justify-center h-96 mt-8">
             <img v-scroll-reveal.reset="{ delay: 250 }" class="h-full" src="../assets/skatemap.svg" />
           </div>
-        <div class="more w-20 h-20 flex items-end">
+        <div class="more flex-col w-full h-6 flex items-end">
           <img class="more cursor-pointer" src="../assets/more.svg" />
         </div>
         </div>
@@ -145,10 +145,10 @@
     </div>
 
     <div
-      class="samenwerken h-24 flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
+      class="samenwerken h-screen flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
     >
       <div
-        class="desc w-11/12 flex mb-48 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
+        class="desc w-11/12 flex mb-48 md:h-full md:w-6/12 flex-col justify-center"
       >
         <div class="text-3xl text-secondary md:text-8xl font-bold">
           Samenwerken?
@@ -156,11 +156,8 @@
             Ik werk als freelancer voor Remoris. Drink een koffietje met ons.
           </div>
         </div>
-      </div>
-    </div>
-
-    <div
-      class="contact h-96 my-8 flex justify-center items-center flex-col md:flex-row bg-secondary"
+        <div
+      class="contact w-screen h-96 my-8 flex justify-center items-center flex-col md:flex-row bg-secondary"
     >
       <div
         class="desc w-12/12 flex md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
@@ -175,6 +172,10 @@
         </div>
       </div>
     </div>
+      </div>
+    </div>
+
+    
 
     <div
       class="copyright h-8 flex content-center md:justify-center flex-col md:flex-row md:mt-0 text-secondary"
@@ -193,6 +194,7 @@ ScrollReveal().reveal('.pom');
 export default {
   name: "Home",
 };
+
 </script>
 
 <style scoped>
