@@ -138,7 +138,7 @@
       class="skatemap h-4/12 md:justify-end flex-row md:flex-row md:mt-0"
     >
       <div class="img w-full flex justify-end">
-        <a class="cv bg-drie rounded-xl cursor-pointer" src="../../public/cv.pdf" 
+        <a class="cv bg-drie rounded-xl cursor-pointer" href="/cv.pdf" 
           ><img class="h-full" src="../assets/cv.svg"
         /></a>
       </div>
@@ -148,19 +148,19 @@
       class="samenwerken h-screen flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
     >
       <div
-        class="desc w-11/12 flex mb-48 md:h-full md:w-6/12 flex-col justify-center"
+        class="desc w-11/12 flex mb-48 md:h-full md:w-6/12 flex-col items-center justify-center"
       >
         <div class="text-3xl text-secondary md:text-8xl font-bold">
           Samenwerken?
           <div id="contact" class="text-xl text-secondary md:text-3xl font-thin">
-            Ik werk als freelancer voor Remoris. Drink een koffietje met ons.
+            Ik werk als freelancer voor Remoris. <br>Drink een koffietje met ons.
           </div>
         </div>
         <div
-      class="contact w-screen h-96 my-8 flex justify-center items-center flex-col md:flex-row bg-secondary"
+      class="contact w-screen h-96 my-8 flex justify-center items-center flex-col md:flex-row rounded-lg bg-secondary"
     >
       <div
-        class="desc w-12/12 flex md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
+        class="desc"
       >
         <div class="text-3xl md:text-8xl font-bold">
           Contact
