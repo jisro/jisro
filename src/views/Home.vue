@@ -63,7 +63,7 @@
         
       </div>
       </div>
-    <div class="down h-16 flex justify-center"><a class="cursor-pointer" v-scroll-to="'#pom'"><svg width="51" height="24" viewBox="0 0 51 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="down h-20 flex justify-center"><a class="cursor-pointer" v-scroll-to="'#pom'"><svg width="51" height="24" viewBox="0 0 51 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9326 0L25 12L12.0674 0H0L25.1244 23.25L50.2488 0H37.9326Z" fill="#202041"/>
 </svg></a>
 </div>
