@@ -63,7 +63,7 @@
         
       </div>
       </div>
-    <div class="down flex justify-center"><a class="cursor-pointer" v-scroll-to="'#pom'"><svg width="51" height="24" viewBox="0 0 51 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="down h-12 flex justify-center"><a class="cursor-pointer" v-scroll-to="'#pom'"><svg width="51" height="24" viewBox="0 0 51 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9326 0L25 12L12.0674 0H0L25.1244 23.25L50.2488 0H37.9326Z" fill="#202041"/>
 </svg></a>
 </div>
@@ -138,9 +138,9 @@
       class="skatemap h-4/12 md:justify-end flex-row md:flex-row md:mt-0"
     >
       <div class="img w-full flex justify-end">
-        <pdf class="cv bg-drie rounded-xl" href="../assets/cv.pdf" 
+        <a class="cv bg-drie rounded-xl cursor-pointer" src="../../public/cv.pdf" 
           ><img class="h-full" src="../assets/cv.svg"
-        /></pdf>
+        /></a>
       </div>
     </div>
 
@@ -190,6 +190,7 @@
 </template>
 
 <script>
+
 ScrollReveal().reveal('.pom');
 export default {
   name: "Home",

@@ -5,6 +5,8 @@ import store from "./store";
 import "./index.css";
 import VueScrollReveal from 'vue-scroll-reveal';
  
+
+
 Vue.use(VueScrollReveal);
  
 var VueScrollTo = require("vue-scrollto");
