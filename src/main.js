@@ -4,8 +4,11 @@ import router from "./router";
 import store from "./store";
 import "./index.css";
 import VueScrollReveal from 'vue-scroll-reveal';
- 
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
 
+import VueFlicking from "@egjs/vue-flicking";
+Vue.use(VueFlicking);
 
 Vue.use(VueScrollReveal);
  
