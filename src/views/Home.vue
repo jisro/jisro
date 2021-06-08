@@ -1,5 +1,12 @@
 <template>
   <div class="content flex flex-col w-screen overflow-x-hidden bg-quarternary">
+    <flicking
+        class="flicking flicking0 h-screen"
+        :options="{
+          circular: false,
+          horizontal: false,
+        }"
+      >
     <div class="intro h-screen flex flex-col justify-between bg-secondary">
       <div
         id="navigation"
@@ -78,7 +85,7 @@
       </div>
       <div class="down h-20 flex justify-center">
         <a class="cursor-pointer" v-scroll-to="'#pom'"
-          ><svg
+          ><svg class="down2"
             width="51"
             height="24"
             viewBox="0 0 51 24"
@@ -94,7 +101,7 @@
         ></a>
       </div>
     </div>
-    <div class="h-screen bg-twee relative">
+    <div class="h-screen bg-twee flex flex-col justify-around items-center">
       <flicking
         class="flicking flicking0 w-screen"
         :options="{
@@ -109,7 +116,7 @@
       >
         <div
           id="pom"
-          class="pom h-11/12 w-screen bg-twee flex content-center justify-center items-center flex-col md:flex-row"
+          class="pom h-11/12 w-screen bg-twee flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
             class="desc flex w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
@@ -152,13 +159,13 @@
           </div>
         </div>
       </flicking>
-       <div class="progress w-6/12 z-1000">
+       <div class="progress h-2 w-6/12">
       <div class="thumb" ref="thumb"></div>
     </div>
     </div>
 
     <div
-      class="soma h-screen bg-drie flex content-center justify-center flex-col md:flex-row"
+      class="soma h-screen w-screen bg-drie flex content-center justify-center flex-col md:flex-row"
     >
       <div
         class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
@@ -183,7 +190,7 @@
     </div>
 
     <div
-      class="skatemap h-screen bg-vier flex content-center justify-center flex-col md:flex-row"
+      class="skatemap h-screen w-screen bg-vier flex content-center justify-center flex-col md:flex-row"
     >
       <div
         class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
@@ -254,11 +261,11 @@
         </div>
       </div>
     </div>
+    </flicking>
   </div>
 </template>
 
 <script lang="ts">
-ScrollReveal().reveal(".pom");
 export default {
   name: "Home",
 }
@@ -290,13 +297,8 @@ export default {
 }
 
 .progress {
-  position: absolute;
-  bottom: 2rem;
-  left: 25%;
-  height: 10px;
   border-radius: 5px;
   background: rgba(32,32,65,0.2);
-  margin: 10px auto;
   overflow: hidden;
 }
 .thumb {
@@ -306,4 +308,6 @@ export default {
   border-radius: inherit;
   background: #202041;
 }
+
+
 </style>
