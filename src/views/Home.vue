@@ -1,13 +1,5 @@
 <template>
   <div class="content flex flex-col w-screen overflow-x-hidden bg-quarternary">
-    <flicking
-        class="flicking2 h-screen"
-        :options="{
-          circular: false,
-          horizontal: false,
-          moveType: 'freeScroll'
-          }"
-          >
     <div class="intro h-screen flex flex-col justify-between bg-secondary">
       <div
         id="navigation"
@@ -262,7 +254,6 @@
         </div>
       </div>
     </div>
-    </flicking>
   </div>
 </template>
 
