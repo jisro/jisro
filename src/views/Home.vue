@@ -94,65 +94,69 @@
         ></a>
       </div>
     </div>
+    <div class="h-screen bg-twee relative">
+      <flicking
+        class="flicking flicking0 w-screen"
+        :options="{
+          circular: true,
+          moveType: { type: 'snap', count: 2 },
+        }"
+        @move="
+          (e) => {
+            this.$refs.thumb.style.width = e.progress * 100 + '%';
+          }
+        "
+      >
+        <div
+          id="pom"
+          class="pom h-11/12 w-screen bg-twee flex content-center justify-center items-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
+              Pom
+              <div class="text-xl md:text-3xl font-thin">
+                Een praatmaatje voor kinderen met een taalachterstand.
+              </div>
+              <div class="img flex h-96 mt-8">
+                <img
+                  v-scroll-reveal.reset="{ delay: 250 }"
+                  class="h-full"
+                  src="../assets/pom.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="pom2"
+          class="pom h-11/12 w-screen bg-twee flex content-center justify-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
+              Pom Twee
+              <div class="text-xl md:text-3xl font-thin">
+                Dit is wat ik heb gedaan.
+              </div>
+              <div class="img flex h-96 mt-8">
+                <img
+                  v-scroll-reveal.reset="{ delay: 250 }"
+                  class="h-full"
+                  src="../assets/pom.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </flicking>
+       <div class="progress w-6/12 z-1000">
+      <div class="thumb" ref="thumb"></div>
+    </div>
+    </div>
 
-    <flicking>
-      <div
-        id="pom"
-        class="pom h-screen w-screen bg-twee flex content-center justify-center flex-col md:flex-row"
-      >
-        <div
-          class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
-        >
-          <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
-            Pom
-            <div class="text-xl md:text-3xl font-thin">
-              Een praatmaatje voor kinderen met een taalachterstand.
-            </div>
-            <div class="img flex h-96 mt-8">
-              <img
-                v-scroll-reveal.reset="{ delay: 250 }"
-                class="h-full"
-                src="../assets/pom.svg"
-              />
-            </div>
-            <router-link
-              to="/Pom"
-              class="more flex-col w-full h-6 flex items-end"
-            >
-              <img class="more cursor-pointer" src="../assets/more.svg" />
-            </router-link>
-          </div>
-        </div>
-      </div>
-      <div
-        id="pom2"
-        class="pom h-screen w-screen bg-twee flex content-center justify-center flex-col md:flex-row"
-      >
-        <div
-          class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
-        >
-          <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
-            Pom Twee
-            <div class="text-xl md:text-3xl font-thin">
-              Dit is wat ik heb gedaan.
-            </div>
-            <div class="img flex h-96 mt-8">
-              <img
-                v-scroll-reveal.reset="{ delay: 250 }"
-                class="h-full"
-                src="../assets/pom.svg"
-              />
-            </div>
-            <router-link
-              to="/Pom"
-              class="more flex-col w-full h-6 flex items-end"
-            >
-              <img class="more cursor-pointer" src="../assets/more.svg" />
-            </router-link>
-          </div>
-        </div>
-      </div>
-    </flicking>
     <div
       class="soma h-screen bg-drie flex content-center justify-center flex-col md:flex-row"
     >
@@ -253,11 +257,12 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 ScrollReveal().reveal(".pom");
 export default {
   name: "Home",
-};
+}
+;
 </script>
 
 <style scoped>
@@ -284,20 +289,21 @@ export default {
   background-size: cover;
 }
 
-  #progress .progress {
-    position: relative;
-    width: 400px;
-    height: 10px;
-    border-radius: 5px;
-    background: #eee;
-    margin: 10px auto;
-    overflow: hidden;
-  }
-  #progress .thumb {
-    position: relative;
-    height: 100%;
-    width: 0;
-    border-radius: inherit;
-    background: #ccc;
-  }
+.progress {
+  position: absolute;
+  bottom: 2rem;
+  left: 25%;
+  height: 10px;
+  border-radius: 5px;
+  background: rgba(32,32,65,0.2);
+  margin: 10px auto;
+  overflow: hidden;
+}
+.thumb {
+  position: relative;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: #202041;
+}
 </style>
