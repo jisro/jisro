@@ -94,9 +94,9 @@
         ></a>
       </div>
     </div>
-    <div class="h-screen bg-twee flex flex-col justify-around items-center">
+    <div class="h-screen bg-twee flex flex-col justify-center items-center">
       <flicking
-        class="flicking flicking0 w-screen"
+        class="flicking flicking0 w-screen h-11/12"
         :options="{
           circular: true,
           moveType: { type: 'snap', count: 2 },
@@ -119,7 +119,7 @@
               <div class="text-xl md:text-3xl font-thin">
                 Een praatmaatje voor kinderen met een taalachterstand.
               </div>
-              <div class="img flex h-96 mt-8">
+              <div class="img flex h-80 lg:h-64">
                 <img
                   v-scroll-reveal.reset="{ delay: 250 }"
                   class="h-full"
@@ -131,17 +131,17 @@
         </div>
         <div
           id="pom2"
-          class="pom h-11/12 w-screen bg-twee flex content-center justify-center flex-col md:flex-row"
+          class="pom h-11/12 w-screen bg-twee flex justify-center items-center content-center flex-col"
         >
           <div
-            class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
+            class="desc flex w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
           >
             <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
               Pom Twee
-              <div class="text-xl md:text-3xl font-thin">
-                Dit is wat ik heb gedaan.
+              <div class="text-base md:text-3xl font-thin md:w-2/5">
+                De VoorleesExpress is altijd op zoek naar nieuwe en spannende manieren om kinderen met een lage taalvaardigheid aan te moedigen meer te praten. <br> Samen met Kaliber Interactive ontwikkelden we een meertalige spraakgestuurde applicatie met een uniek gesprekspatroon. Daarnaast hebben we een behuizing voor de Google Home Mini ontworpen om een persoonlijkere interface te creëren. 
               </div>
-              <div class="img flex h-96 mt-8">
+              <div class="img flex h-12">
                 <img
                   v-scroll-reveal.reset="{ delay: 250 }"
                   class="h-full"
@@ -152,7 +152,7 @@
           </div>
         </div>
       </flicking>
-       <div class="progress h-2 w-6/12">
+       <div class="progress h-2 w-6/12 mt-12 lg:mt-64">
       <div class="thumb" ref="thumb"></div>
     </div>
     </div>
@@ -168,7 +168,7 @@
           <div class="text-xl md:text-3xl font-thin">
             Een smartphone app over lichaamsbewustzijn.
           </div>
-          <div class="img flex justify-center h-96 mt-8">
+          <div class="img flex justify-center h-96">
             <img
               v-scroll-reveal.reset="{ delay: 250 }"
               class="h-full"
