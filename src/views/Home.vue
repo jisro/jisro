@@ -478,9 +478,9 @@
       <div class="cv flex justify-start flex-row md:flex-row">
         <div class="img w-full flex justify-end">
           <a
-            class="cv bg-twee cursor-pointer rounded-bl-3xl flex justify-center"
+            class="cv bg-twee cursor-pointer rounded-bl-3xl flex justify-center w-1/5"
             href="/cv.pdf"
-            ><img class="h-20 md: h-36 lg:h-48" src="../assets/cv.svg"
+            ><img class="h-20 md:h-36 lg:h-48" src="../assets/cv.svg"
           /></a>
         </div>
       </div>
@@ -529,7 +529,6 @@
 <script lang="ts">
 export default {
   name: "Home",
-  moveType: "freeScroll",
 };
 </script>
 
