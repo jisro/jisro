@@ -6,14 +6,14 @@
         class="nav w-screen flex justify-between h-20 font-semibold text-quarternary"
       >
         <div
-          class="logo flex w-full mx-6 items-center text-2xl justify-start animate__animated animate__tada cursor-pointer"
+          class="logo flex w-full mx-6 items-center text-2xl lg:text-4xl justify-start animate__animated animate__tada cursor-pointer"
         >
           <a v-scroll-to="'#navigation'" class="opacity-100 hover:opacity-70"
             >Jisro</a
           >
         </div>
         <div
-          class="navigation md:w-6/12 text-base flex items-center justify-end mx-3"
+          class="navigation md:w-6/12 text-base lg:text-2xl flex items-center justify-end mx-3"
         >
           <div
             class="w-24 h-20 md:w-96 flex justify-center items-center cursor-pointer"
@@ -78,7 +78,8 @@
       </div>
       <div class="down h-20 flex justify-center">
         <a class="cursor-pointer" v-scroll-to="'#pom'"
-          ><svg class="down2"
+          ><svg
+            class="down2"
             width="51"
             height="24"
             viewBox="0 0 51 24"
@@ -94,95 +95,336 @@
         ></a>
       </div>
     </div>
-    <div class="h-screen bg-twee flex flex-col justify-center items-center">
+    <div
+      id="pom"
+      class="h-screen bg-twee flex flex-col justify-center items-center"
+    >
       <flicking
-        class="flicking flicking0 w-screen h-11/12"
+        class="flicking flicking0 w-screen h-4/5 flex justify-center items-center content-center"
         :options="{
           circular: true,
-          moveType: { type: 'snap', count: 2 },
+          moveType: { type: 'snap', count: 4 },
         }"
         @move="
           (e) => {
-            this.$refs.thumb.style.width = e.progress * 100 + '%';
+            this.$refs.thumb.style.width = e.progress * 133.333 + '%';
           }
         "
       >
         <div
-          id="pom"
-          class="pom h-11/12 w-screen bg-twee flex justify-center items-center content-center flex-col md:flex-row"
+          class="pom h-full w-full bg-twee flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
-            class="desc flex w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+            class="desc flex w-full lg:w-8/12 h-4/5 flex-col md:w-6/12 content-center justify-center items-center"
           >
-            <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
+            <div class="text-3xl w-6/12 h-8/12 md:text-8xl font-bold">
               Pom
-              <div class="text-xl md:text-3xl font-thin">
+              <div class="text-base md:text-3xl font-thin">
                 Een praatmaatje voor kinderen met een taalachterstand.
               </div>
-              <div class="img flex h-80 lg:h-64">
-                <img
-                  v-scroll-reveal.reset="{ delay: 250 }"
-                  class="h-full"
-                  src="../assets/pom.svg"
-                />
+              <div class="img flex justify-center h-4/5 lg:h-96 lg:mt-12">
+                <img class="h-full" src="../assets/pom.svg" />
+              </div>
+            </div>
+            <div class="tags mt-8 w-3/5 lg:w-4/12 h-12">
+              <div class="circle flex mx-2">
+                <p
+                  class="align-middle flex justify-center items-center text-twee bg-quarternary rounded-full h-1/12 w-full text-base mx-2"
+                >
+                  UX design
+                </p>
+                <p
+                  class="align-middle flex justify-center items-center whitespace-nowrap text-twee bg-quarternary rounded-full h-1/12 w-full text-base"
+                >
+                  Video Editing
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div
           id="pom2"
-          class="pom h-11/12 w-screen bg-twee flex justify-center items-center content-center flex-col"
+          class="pom h-full w-screen bg-twee flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
-            class="desc flex w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
           >
             <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
-              Pom Twee
+              Het project
               <div class="text-base md:text-3xl font-thin md:w-2/5">
-                De VoorleesExpress is altijd op zoek naar nieuwe en spannende manieren om kinderen met een lage taalvaardigheid aan te moedigen meer te praten. <br> Samen met Kaliber Interactive ontwikkelden we een meertalige spraakgestuurde applicatie met een uniek gesprekspatroon. Daarnaast hebben we een behuizing voor de Google Home Mini ontworpen om een persoonlijkere interface te creëren. 
+                <br />
+                De VoorleesExpress is altijd op zoek naar nieuwe en spannende
+                manieren om kinderen met een lage taalvaardigheid aan te
+                moedigen meer te praten. <br /><br />
+                Samen met Kaliber Interactive ontwikkelden we een meertalige
+                spraakgestuurde applicatie met een uniek gesprekspatroon.
+                Daarnaast hebben we een behuizing voor de Google Home Mini
+                ontworpen om een persoonlijkere interface te creëren.
               </div>
-              <div class="img flex h-12">
-                <img
-                  v-scroll-reveal.reset="{ delay: 250 }"
-                  class="h-full"
-                  src="../assets/pom.svg"
-                />
+            </div>
+          </div>
+        </div>
+        <div
+          id="pom3"
+          class="pom h-full w-screen bg-twee flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
+              Mijn rol
+              <div class="text-base md:text-3xl font-thin md:w-2/5">
+                <br />
+                Er is uitgebreid onderzoek gedaan naar de doelgroep. Ik heb mij
+                bezig gehouden met de gebruikerservaring en de vormgeving.<br /><br />
+                De casemovie is voor het overgrote deel gemaakt door mij.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="pom4"
+          class="pom h-full w-screen bg-twee flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl h-full md:text-8xl font-bold">
+              Eindproduct
+              <div
+                class="text-base w-full flex h-full justify-center md:text-3xl font-thin"
+              >
+                <br />
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://player.vimeo.com/video/344591611?title=0&byline=0&portrait=0"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p></p>
               </div>
             </div>
           </div>
         </div>
       </flicking>
-       <div class="progress h-2 w-6/12 mt-12 lg:mt-64">
-      <div class="thumb" ref="thumb"></div>
-    </div>
-    </div>
-
-    <div
-      class="soma h-screen w-screen bg-drie flex content-center justify-center flex-col md:flex-row"
-    >
-      <div
-        class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
-      >
-        <div class="text-3xl w-10/12 h-8/12 md:text-8xl font-bold">
-          SOMA
-          <div class="text-xl md:text-3xl font-thin">
-            Een smartphone app over lichaamsbewustzijn.
-          </div>
-          <div class="img flex justify-center h-96">
-            <img
-              v-scroll-reveal.reset="{ delay: 250 }"
-              class="h-full"
-              src="../assets/soma.svg"
-            />
-          </div>
-          <div class="more flex-col w-full h-6 flex items-end">
-            <img class="more cursor-pointer" src="../assets/more.svg" />
-          </div>
-        </div>
+      <div class="progress h-2 w-24 lg:w-2/12 mt-12">
+        <div class="thumb" ref="thumb"></div>
       </div>
     </div>
 
     <div
+      class="soma h-screen bg-drie flex flex-col justify-center items-center"
+    >
+      <flicking
+        class="flicking flicking1 w-screen h-4/5 flex justify-center items-center content-center"
+        :options="{
+          circular: true,
+          moveType: { type: 'snap', count: 4 },
+        }"
+        @move="
+          (e) => {
+            this.$refs.thumb.style.width = e.progress * 133.333 + '%';
+          }
+        "
+      >
+        <div
+          class="soma1 h-full w-full flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex w-full lg:w-8/12 h-4/5 flex-col md:w-6/12 content-center justify-center items-center"
+          >
+            <div class="text-3xl w-6/12 h-8/12 md:text-8xl font-bold">
+              SOMA
+              <div class="text-base md:text-3xl font-thin">
+                Een smartphone app over lichaamsbewustzijn.
+              </div>
+              <div class="img flex justify-center h-4/5 lg:h-96 lg:mt-12">
+                <img class="h-full" src="../assets/soma.svg" />
+              </div>
+            </div>
+            <div class="tags mt-8 w-3/5 lg:w-4/12 h-12">
+              <div class="circle flex mx-2">
+                <p
+                  class="align-middle flex justify-center items-center text-drie bg-quarternary rounded-full h-1/12 w-full text-base mx-2"
+                >
+                  UI design
+                </p>
+                <p
+                  class="align-middle flex justify-center items-center whitespace-nowrap text-drie bg-quarternary rounded-full h-1/12 w-full text-base"
+                >
+                  Video Editing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="soma2"
+          class="soma2 h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
+              Het project
+              <div class="text-base md:text-3xl font-thin md:w-2/5">
+                <br />
+                SOMA is een app die op een leuke en ongedwongen manier gebruikers helpt om hun lichaam beter te leren kennen. <br> <br>Door korte, simpele oefeningen zoals geleide ademhalingsoefeningen en korte check ups wordt de gebruiker spelenderwijs gestimuleerd om lichamelijke signalen te interpreteren en oefeningen te doen die het lichaamsbewustzijn op structurele basis vergroten. 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="pom3"
+          class="pom h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
+              Onderzoek
+              <div class="text-base md:text-3xl font-thin md:w-2/5">
+                <br />
+                Bekijk het exploratiedocument <a href="/explo.pdf">hier</a><br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="soma4"
+          class="soma4 h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl flex flex-col justify-center md:text-8xl font-bold">
+              Eindproduct
+              <div
+                class="text-base w-full flex h-8/12 justify-center md:text-3xl font-thin"
+              >
+              
+                <br />
+                <iframe class="h-full w-full my-6" title="vimeo-player" src="https://player.vimeo.com/video/520710308" frameborder="0" allowfullscreen></iframe>
+                <p></p>
+              </div>
+              <div class="text-base md:text-3xl font-thin my-4">
+               <a href="https://framer.com/embed/SOMA--8FvLmVNE3r0BWyvA5PdM/hNsTfrRGW">Ervaar hem zelf op Framer!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </flicking>
+      <div class="progress h-2 w-24 lg:w-2/12 mt-12">
+        <div class="thumb" ref="thumb"></div>
+      </div>
+    </div>
+
+    <div
+      class="soma h-screen bg-vier flex flex-col justify-center items-center"
+    >
+      <flicking
+        class="flicking flicking2 w-screen h-4/5 flex justify-center items-center content-center"
+        :options="{
+          circular: true,
+          moveType: { type: 'snap', count: 4 },
+        }"
+        @move="
+          (e) => {
+            this.$refs.thumb.style.width = e.progress * 133.333 + '%';
+          }
+        "
+      >
+        <div
+          class="soma1 h-full w-full flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex w-full lg:w-8/12 h-4/5 flex-col md:w-6/12 content-center justify-center items-center"
+          >
+            <div class="text-3xl w-6/12 h-8/12 md:text-8xl font-bold">
+              skatemap
+              <div class="text-base md:text-3xl font-thin">
+                Een app voor skaters.
+              </div>
+              <div class="img flex justify-center h-4/5 lg:h-96 lg:mt-12">
+                <img class="h-full" src="../assets/skatemap.svg" />
+              </div>
+            </div>
+            <div class="tags mt-8 w-3/5 lg:w-4/12 h-12">
+              <div class="circle flex mx-2">
+                <p
+                  class="align-middle flex justify-center items-center text-vier bg-quarternary rounded-full h-1/12 w-full text-base mx-2"
+                >
+                  UI design
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="soma2"
+          class="soma2 h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
+              Het project
+              <div class="text-base md:text-3xl font-thin md:w-2/5">
+                <br />
+                Skatemap is een zelfbedacht concept dat in de beginfase van ontwikkeling staat. <br /><br />
+                Skatemap is een app die skaters een overzichtelijke kaart geeft van skateparken in Nederland. Deze zijn te filteren op technische aspecten van een skatebaan.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="pom3"
+          class="pom h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl w-screen h-8/12 md:text-8xl font-bold">
+              Mijn rol
+              <div class="text-base md:text-3xl font-thin md:w-2/5">
+                <br />
+                Het concept, de UI en UX zijn door mij bedacht. Dit project is puur ontstaan uit leergierigheid.<br /><br />
+                Mijn collega Remo heeft de back-end gemaakt. 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="soma4"
+          class="skatemap4 h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
+        >
+          <div
+            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+          >
+            <div class="text-3xl h-full flex flex-col justify-center md:text-8xl font-bold">
+              Eindproduct
+              <div
+                class="text-base w-full flex h-2/12 justify-center md:text-3xl font-thin"
+              >
+                <br />
+                <a class="lg:text-6xl mt-8 h-full" href="https://www.figma.com/proto/rlCksNCLq6MeQ7S8OAXtUi/Skatemap-mobile?node-id=0%3A1&scaling=scale-down&page-id=0%3A1">Bekijk op figma!</a>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </flicking>
+      <div class="progress h-2 w-24 lg:w-2/12 mt-12">
+        <div class="thumb" ref="thumb"></div>
+      </div>
+    </div>
+
+    <!-- <div
       class="skatemap h-screen w-screen bg-vier flex content-center justify-center flex-col md:flex-row"
     >
       <div
@@ -203,41 +445,41 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="skatemap h-4/12 md:justify-end flex-row md:flex-row md:mt-0">
-      <div class="img w-full flex justify-end">
-        <a class="cv bg-drie rounded-xl cursor-pointer" href="/cv.pdf"
-          ><img class="h-full" src="../assets/cv.svg"
-        /></a>
+    <div class="contact h-screen flex content-center justify-between flex-col">
+      <div class="cv flex justify-start flex-row md:flex-row">
+        <div class="img w-full flex justify-end">
+          <a
+            class="cv bg-twee cursor-pointer rounded-bl-3xl flex justify-center"
+            href="/cv.pdf"
+            ><img class="h-20 md: h-36 lg:h-48" src="../assets/cv.svg"
+          /></a>
+        </div>
       </div>
-    </div>
 
-    <div
-      class="samenwerken h-screen flex content-center md:justify-center flex-col md:flex-row mt-12 md:mt-0"
-    >
       <div
-        class="desc w-11/12 flex mb-48 md:h-full md:w-6/12 flex-col items-center justify-center"
+        class="desc w-11/12 flex mx-6 md:h-full md:w-6/12 flex-col items-center justify-center"
       >
-        <div class="text-3xl text-secondary md:text-8xl font-bold">
+        <div class="text-3xl mb-12 text-secondary md:text-4xl font-bold">
           Samenwerken?
           <div
             id="contact"
             class="text-xl text-secondary md:text-3xl font-thin"
           >
-            Ik werk als freelancer voor Remoris. <br />Drink een koffietje met
-            ons.
+            Ik werk als freelancer voor Remoris. <br />Stuur een mailtje voor
+            meer informatie.
           </div>
         </div>
         <div
-          class="contact w-screen h-96 my-8 flex justify-center items-center flex-col md:flex-row rounded-lg bg-secondary"
+          class="contact w-screen h-80 flex justify-center items-center flex-col rounded-lg bg-secondary"
         >
           <div class="desc">
-            <div class="text-3xl md:text-8xl font-bold">
+            <div class="text-3xl md:text-4xl lg:text-6xl font-bold">
               Contact
               <div class="text-xl md:text-3xl font-thin">
                 <br />
-                hi@jisro.nl <br />
+                <a href="mailto:joris-jansen@hotmail.com">hi@jisro.nl</a> <br />
                 <a href="tel:+31 6 232 454 01">+31 6 232 454 01</a>
               </div>
             </div>
@@ -245,10 +487,10 @@
         </div>
       </div>
       <div
-        class="copyright h-8 flex content-center md:justify-center flex-col md:flex-row md:mt-0 text-secondary"
+        class="copyright h-8 flex content-center items-center md:justify-center flex-col md:mt-0 text-secondary"
       >
         <div
-          class="desc w-11/12 flex h-full mb-24 md:h-full md:w-6/12 flex-row md:flex-col justify-center mx-6"
+          class="desc w-11/12 flex h-full md:h-full md:w-6/12 flex-row justify-center mx-6"
         >
           © Jisro, 2021
         </div>
@@ -258,12 +500,10 @@
 </template>
 
 <script lang="ts">
-
 export default {
   name: "Home",
   moveType: "freeScroll",
-}
-;
+};
 </script>
 
 <style scoped>
@@ -292,7 +532,7 @@ export default {
 
 .progress {
   border-radius: 5px;
-  background: rgba(32,32,65,0.2);
+  background: rgba(32, 32, 65, 0.2);
   overflow: hidden;
 }
 .thumb {
@@ -302,6 +542,4 @@ export default {
   border-radius: inherit;
   background: #202041;
 }
-
-
 </style>
