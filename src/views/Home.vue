@@ -272,7 +272,13 @@
               Het project
               <div class="text-base md:text-3xl font-thin md:w-2/5">
                 <br />
-                SOMA is een app die op een leuke en ongedwongen manier gebruikers helpt om hun lichaam beter te leren kennen. <br> <br>Door korte, simpele oefeningen zoals geleide ademhalingsoefeningen en korte check ups wordt de gebruiker spelenderwijs gestimuleerd om lichamelijke signalen te interpreteren en oefeningen te doen die het lichaamsbewustzijn op structurele basis vergroten. 
+                SOMA is een app die op een leuke en ongedwongen manier
+                gebruikers helpt om hun lichaam beter te leren kennen. <br />
+                <br />Door korte, simpele oefeningen zoals geleide
+                ademhalingsoefeningen en korte check ups wordt de gebruiker
+                spelenderwijs gestimuleerd om lichamelijke signalen te
+                interpreteren en oefeningen te doen die het lichaamsbewustzijn
+                op structurele basis vergroten.
               </div>
             </div>
           </div>
@@ -288,7 +294,8 @@
               Onderzoek
               <div class="text-base md:text-3xl font-thin md:w-2/5">
                 <br />
-                Bekijk het exploratiedocument <a href="/explo.pdf">hier</a><br /><br />
+                Bekijk het exploratiedocument <a href="/explo.pdf">hier</a
+                ><br /><br />
               </div>
             </div>
           </div>
@@ -301,18 +308,28 @@
           <div
             class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
           >
-            <div class="text-3xl flex flex-col justify-center md:text-8xl font-bold">
+            <div
+              class="text-3xl flex flex-col justify-center md:text-8xl font-bold"
+            >
               Eindproduct
               <div
                 class="text-base w-full flex h-8/12 justify-center md:text-3xl font-thin"
               >
-              
                 <br />
-                <iframe class="h-full w-full my-6" title="vimeo-player" src="https://player.vimeo.com/video/520710308" frameborder="0" allowfullscreen></iframe>
+                <iframe
+                  class="h-full w-full my-6"
+                  title="vimeo-player"
+                  src="https://player.vimeo.com/video/520710308"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
                 <p></p>
               </div>
               <div class="text-base md:text-3xl font-thin my-4">
-               <a href="https://framer.com/embed/SOMA--8FvLmVNE3r0BWyvA5PdM/hNsTfrRGW">Ervaar hem zelf op Framer!</a>
+                <a
+                  href="https://framer.com/embed/SOMA--8FvLmVNE3r0BWyvA5PdM/hNsTfrRGW"
+                  >Ervaar hem zelf op Framer!</a
+                >
               </div>
             </div>
           </div>
@@ -375,8 +392,11 @@
               Het project
               <div class="text-base md:text-3xl font-thin md:w-2/5">
                 <br />
-                Skatemap is een zelfbedacht concept dat in de beginfase van ontwikkeling staat. <br /><br />
-                Skatemap is een app die skaters een overzichtelijke kaart geeft van skateparken in Nederland. Deze zijn te filteren op technische aspecten van een skatebaan.
+                Skatemap is een zelfbedacht concept dat in de beginfase van
+                ontwikkeling staat. <br /><br />
+                Skatemap is een app die skaters een overzichtelijke kaart geeft
+                van skateparken in Nederland. Deze zijn te filteren op
+                technische aspecten van een skatebaan.
               </div>
             </div>
           </div>
@@ -392,8 +412,9 @@
               Mijn rol
               <div class="text-base md:text-3xl font-thin md:w-2/5">
                 <br />
-                Het concept, de UI en UX zijn door mij bedacht. Dit project is puur ontstaan uit leergierigheid.<br /><br />
-                Mijn collega Remo heeft de back-end gemaakt. 
+                Het concept, de UI en UX zijn door mij bedacht. Dit project is
+                puur ontstaan uit leergierigheid.<br /><br />
+                Mijn collega Remo heeft de back-end gemaakt.
               </div>
             </div>
           </div>
@@ -406,13 +427,19 @@
           <div
             class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
           >
-            <div class="text-3xl h-full flex flex-col justify-center md:text-8xl font-bold">
+            <div
+              class="text-3xl h-full flex flex-col justify-center md:text-8xl font-bold"
+            >
               Eindproduct
               <div
                 class="text-base w-full flex h-2/12 justify-center md:text-3xl font-thin"
               >
                 <br />
-                <a class="lg:text-6xl mt-8 h-full" href="https://www.figma.com/proto/rlCksNCLq6MeQ7S8OAXtUi/Skatemap-mobile?node-id=0%3A1&scaling=scale-down&page-id=0%3A1">Bekijk op figma!</a>
+                <a
+                  class="lg:text-6xl mt-8 h-full"
+                  href="https://www.figma.com/proto/rlCksNCLq6MeQ7S8OAXtUi/Skatemap-mobile?node-id=0%3A1&scaling=scale-down&page-id=0%3A1"
+                  >Bekijk op figma!</a
+                >
                 <p></p>
               </div>
             </div>
