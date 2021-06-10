@@ -200,7 +200,7 @@
             <div class="text-3xl h-full md:text-8xl font-bold">
               Eindproduct
               <div
-                class="text-base w-full flex h-full justify-center md:text-3xl font-thin"
+                class="text-base w-full flex h-3/5 justify-center md:text-3xl font-thin"
               >
                 <br />
                 <iframe
@@ -325,11 +325,11 @@
             class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
           >
             <div
-              class="text-3xl flex flex-col justify-center md:text-8xl font-bold"
+              class="text-3xl h-full flex flex-col justify-center md:text-8xl font-bold"
             >
               Eindproduct
               <div
-                class="text-base w-full flex h-8/12 justify-center md:text-3xl font-thin"
+                class="text-base w-full flex h-full lg:h-12/12 justify-center md:text-3xl font-thin"
               >
                 <br />
                 <iframe
@@ -366,7 +366,7 @@
     </div>
 
     <div
-      class="soma h-screen bg-vier flex flex-col justify-center items-center"
+      class="skatemap h-screen bg-vier flex flex-col justify-center items-center"
     >
       <flicking
         class="flicking flicking2 w-screen h-4/5 flex justify-center items-center content-center"
@@ -381,7 +381,7 @@
         "
       >
         <div
-          class="soma1 h-full w-full flex justify-center items-center content-center flex-col md:flex-row"
+          class="skatemap1 h-full w-full flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
             class="desc flex w-full lg:w-8/12 h-4/5 flex-col md:w-6/12 content-center justify-center items-center"
@@ -407,8 +407,8 @@
           </div>
         </div>
         <div
-          id="soma2"
-          class="soma2 h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
+          id="skatemap2"
+          class="skatemap2 h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
             class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
@@ -427,8 +427,8 @@
           </div>
         </div>
         <div
-          id="pom3"
-          class="pom h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
+          id="skatemap3"
+          class="skatemap3 h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
             class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
@@ -446,24 +446,24 @@
         </div>
 
         <div
-          id="soma4"
+          id="skatemap4"
           class="skatemap4 h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
-            class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
+            class="desc flex h-3/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
           >
             <div
-              class="text-3xl h-full flex flex-col justify-center md:text-8xl font-bold"
+              class="text-3xl h-4/5 flex flex-col justify-center md:text-8xl font-bold"
             >
               Eindproduct
               <div
-                class="text-base w-full flex h-2/12 justify-center md:text-3xl font-thin"
+                class="text-base w-full h-4/5 flex h-2/12 justify-center items-center md:text-3xl font-thin"
               >
                <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
                   <div class="circle flex mx-2 h-14 lg:h-24">
                     <p
                       class="align-middle flex justify-center text-center items-center text-vier bg-quarternary rounded-full h-1/12 w-full text-base lg:text-xl mx-2"
-                    >
+                    > <br><br>
                        <a
                   class="lg:text-6xl mt-8 h-full"
                   href="https://www.figma.com/proto/rlCksNCLq6MeQ7S8OAXtUi/Skatemap-mobile?node-id=0%3A1&scaling=scale-down&page-id=0%3A1"
@@ -485,29 +485,6 @@
       </div>
     </div>
 
-    <!-- <div
-      class="skatemap h-screen w-screen bg-vier flex content-center justify-center flex-col md:flex-row"
-    >
-      <div
-        class="desc flex md:w-6/12 flex-row md:flex-col content-center justify-center"
-      >
-        <div class="text-3xl w-10/12 h-8/12 md:text-8xl font-bold">
-          skatemap
-          <div class="text-xl md:text-3xl font-thin">Een app voor skaters.</div>
-          <div class="img flex justify-center h-96 mt-8">
-            <img
-              v-scroll-reveal.reset="{ delay: 250 }"
-              class="h-full"
-              src="../assets/skatemap.svg"
-            />
-          </div>
-          <div class="more flex-col w-full h-6 flex items-end">
-            <img class="more cursor-pointer" src="../assets/more.svg" />
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="contact h-screen flex content-center justify-between flex-col">
       <div class="cv flex justify-start flex-row md:flex-row">
         <div class="img w-full flex justify-end">
@@ -522,16 +499,6 @@
       <div
         class="desc w-11/12 flex mx-6 md:h-full md:w-6/12 flex-col items-center justify-center"
       >
-        <div class="text-3xl mb-12 text-secondary md:text-4xl font-bold">
-          Samenwerken?
-          <div
-            id="contact"
-            class="text-xl text-secondary md:text-3xl font-thin"
-          >
-            Ik werk als freelancer voor Remoris. <br />Stuur een mailtje voor
-            meer informatie.
-          </div>
-        </div>
         <div
           class="contact w-screen h-80 flex justify-center items-center flex-col rounded-lg bg-secondary"
         >
