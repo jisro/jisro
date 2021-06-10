@@ -1,6 +1,8 @@
 <template>
   <div class="content flex flex-col w-screen overflow-x-hidden bg-quarternary">
-    <div class="intro h-screen flex flex-col justify-between bg-secondary">
+    <div
+      class="intro h-screen flex flex-col justify-between bg-secondary items-center"
+    >
       <div
         id="navigation"
         class="nav w-screen flex justify-between h-20 font-semibold text-quarternary"
@@ -76,6 +78,11 @@
           </svg>
         </div>
       </div>
+      <p
+        class="text-xs rounded-full lg:w-1/5 w-3/5 lg:text-xl font-thin md:mt-8 bg-quarternary text-secondary flex justify-center content-center items-center opacity-40"
+      >
+        Deze website is nog in ontwikkeling.
+      </p>
       <div class="down h-20 flex justify-center">
         <a class="cursor-pointer" v-scroll-to="'#pom'"
           ><svg
@@ -177,7 +184,7 @@
                 <br />
                 Er is uitgebreid onderzoek gedaan naar de doelgroep. Ik heb mij
                 bezig gehouden met de gebruikerservaring en de vormgeving.<br /><br />
-                De casemovie is voor het overgrote deel gemaakt door mij.
+                Hiervoor hebben we bij de doelgroep getest en verschillende ontwerpmethoden toegepast. <br>De casemovie is voor het grootste deel gemaakt door mij. 
               </div>
             </div>
           </div>
@@ -294,8 +301,17 @@
               Onderzoek
               <div class="text-base md:text-3xl font-thin md:w-2/5">
                 <br />
-                Bekijk het exploratiedocument <a href="/explo.pdf">hier</a
-                ><br /><br />
+                Voor dit project is uitgebreid onderzoek gedaan naar lichaam en geest trainingen. Er is een martkanalyse opgesteld en ik heb de doelgroep bevraagd. Om het onderzoek te bekijken, klik op de link hieronder!<br><br>
+                <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
+                  <div class="circle flex mx-2 h-14 lg:h-24">
+                    <p
+                      class="align-middle flex justify-center text-center items-center text-twee bg-quarternary rounded-full h-1/12 w-full text-base lg:text-xl mx-2"
+                    >
+                      <a href="/explo.pdf">Bekijk het exploratiedocument hier</a
+                >
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -326,10 +342,19 @@
                 <p></p>
               </div>
               <div class="text-base md:text-3xl font-thin my-4">
-                <a
+                <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
+                  <div class="circle flex mx-2 h-14 lg:h-24">
+                    <p
+                      class="align-middle flex justify-center items-center text-twee bg-quarternary rounded-full h-1/12 w-full text-base lg:text-xl mx-2"
+                    >
+                      <a
                   href="https://framer.com/embed/SOMA--8FvLmVNE3r0BWyvA5PdM/hNsTfrRGW"
                   >Ervaar hem zelf op Framer!</a
                 >
+                    </p>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -434,12 +459,21 @@
               <div
                 class="text-base w-full flex h-2/12 justify-center md:text-3xl font-thin"
               >
-                <br />
-                <a
+               <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
+                  <div class="circle flex mx-2 h-14 lg:h-24">
+                    <p
+                      class="align-middle flex justify-center text-center items-center text-vier bg-quarternary rounded-full h-1/12 w-full text-base lg:text-xl mx-2"
+                    >
+                       <a
                   class="lg:text-6xl mt-8 h-full"
                   href="https://www.figma.com/proto/rlCksNCLq6MeQ7S8OAXtUi/Skatemap-mobile?node-id=0%3A1&scaling=scale-down&page-id=0%3A1"
                   >Bekijk op figma!</a
                 >
+                    </p>
+                  </div>
+                  </div>
+                <br />
+               
                 <p></p>
               </div>
             </div>
