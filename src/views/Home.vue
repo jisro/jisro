@@ -184,7 +184,9 @@
                 <br />
                 Er is uitgebreid onderzoek gedaan naar de doelgroep. Ik heb mij
                 bezig gehouden met de gebruikerservaring en de vormgeving.<br /><br />
-                Hiervoor hebben we bij de doelgroep getest en verschillende ontwerpmethoden toegepast. <br>De casemovie is voor het grootste deel gemaakt door mij. 
+                Hiervoor hebben we bij de doelgroep getest en verschillende
+                ontwerpmethoden toegepast. <br />De casemovie is voor het
+                grootste deel gemaakt door mij.
               </div>
             </div>
           </div>
@@ -197,11 +199,12 @@
           <div
             class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
           >
-            <div class="text-3xl h-full md:text-8xl font-bold">
+            <div class="text-3xl h-full md:text-8xl font-bold pb-2">
               Eindproduct
               <div
-                class="text-base w-full flex h-3/5 justify-center md:text-3xl font-thin"
+                class="text-base w-full mt-8 flex h-3/5 justify-center md:text-3xl font-thin"
               >
+                <br />
                 <br />
                 <iframe
                   width="100%"
@@ -301,17 +304,21 @@
               Onderzoek
               <div class="text-base md:text-3xl font-thin md:w-2/5">
                 <br />
-                Voor dit project is uitgebreid onderzoek gedaan naar lichaam en geest trainingen. Er is een martkanalyse opgesteld en ik heb de doelgroep bevraagd. Om het onderzoek te bekijken, klik op de link hieronder!<br><br>
-                <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
-                  <div class="circle flex mx-2 h-14 lg:h-24">
-                    <p
-                      class="align-middle flex justify-center text-center items-center text-twee bg-quarternary rounded-full h-1/12 w-full text-base lg:text-xl mx-2"
-                    >
-                      <a href="/explo.pdf">Bekijk het exploratiedocument hier</a
-                >
-                    </p>
+                Voor dit project is uitgebreid onderzoek gedaan naar lichaam en
+                geest trainingen. Er is een martkanalyse opgesteld en ik heb de
+                doelgroep bevraagd. Om het onderzoek te bekijken, klik op de
+                link hieronder!<br /><br />
+                <a href="/explo.pdf">
+                  <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
+                    <div class="circle flex mx-2 h-14 lg:h-24">
+                      <p
+                        class="align-middle flex justify-center text-center items-center text-twee bg-quarternary rounded-full h-1/12 w-full text-base lg:text-xl mx-2"
+                      >
+                        Bekijk het exploratiedocument hier
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -342,19 +349,19 @@
                 <p></p>
               </div>
               <div class="text-base md:text-3xl font-thin my-4">
-                <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
-                  <div class="circle flex mx-2 h-14 lg:h-24">
-                    <p
-                      class="align-middle flex justify-center items-center text-twee bg-quarternary rounded-full h-1/12 w-full text-base lg:text-xl mx-2"
-                    >
-                      <a
+                <a
                   href="https://framer.com/embed/SOMA--8FvLmVNE3r0BWyvA5PdM/hNsTfrRGW"
-                  >Ervaar hem zelf op Framer!</a
                 >
-                    </p>
+                  <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
+                    <div class="circle flex mx-2 h-14 lg:h-24">
+                      <p
+                        class="align-middle flex justify-center items-center text-twee bg-quarternary rounded-full h-1/12 w-full text-base lg:text-xl mx-2"
+                      >
+                        Ervaar hem zelf op Framer!
+                      </p>
+                    </div>
                   </div>
-                </div>
-                
+                </a>
               </div>
             </div>
           </div>
@@ -459,21 +466,22 @@
               <div
                 class="text-base w-full h-4/5 flex h-2/12 justify-center items-center md:text-3xl font-thin"
               >
-               <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
+                <div class="tags mt-8 lg:w-7/12 h-14 lg:h-24">
                   <div class="circle flex mx-2 h-14 lg:h-24">
                     <p
                       class="align-middle flex justify-center text-center items-center text-vier bg-quarternary rounded-full h-1/12 w-full text-base lg:text-xl mx-2"
-                    > <br><br>
-                       <a
-                  class="lg:text-6xl mt-8 h-full"
-                  href="https://www.figma.com/proto/rlCksNCLq6MeQ7S8OAXtUi/Skatemap-mobile?node-id=0%3A1&scaling=scale-down&page-id=0%3A1"
-                  >Bekijk op figma!</a
-                >
+                    >
+                      <br /><br />
+                      <a
+                        class="lg:text-6xl mt-8 h-full"
+                        href="https://www.figma.com/proto/rlCksNCLq6MeQ7S8OAXtUi/Skatemap-mobile?node-id=0%3A1&scaling=scale-down&page-id=0%3A1"
+                        >Bekijk op figma!</a
+                      >
                     </p>
                   </div>
-                  </div>
+                </div>
                 <br />
-               
+
                 <p></p>
               </div>
             </div>
@@ -489,7 +497,7 @@
       <div class="cv flex justify-start flex-row md:flex-row">
         <div class="img w-full flex justify-end">
           <a
-            class="cv bg-twee cursor-pointer rounded-bl-3xl flex justify-center w-1/5"
+            class="cv bg-twee cursor-pointer rounded-t-3xl rounded-full flex justify-center w-4/12"
             href="/cv.pdf"
             ><img class="h-20 md:h-36 lg:h-48" src="../assets/cv.svg"
           /></a>
