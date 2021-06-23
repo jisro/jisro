@@ -557,7 +557,7 @@
               class="rounded-full h-1 w-2/5 bg-quarternary opacity-20 my-6"
             ></div>
 
-            <a class="hover:bg-quarternary hover:text-vijf" href="/cv.pdf"
+            <a class="hover:bg-quarternary hover:text-vijf" href="/cv.pdf" target="_blank"
               >curriculum vitae</a
             >
           </div>
