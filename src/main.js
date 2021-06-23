@@ -11,7 +11,6 @@ import VueFlicking from "@egjs/vue-flicking";
 Vue.use(VueFlicking);
 
 Vue.use(VueScrollReveal);
-
 var VueScrollTo = require("vue-scrollto");
 
 Vue.use(VueScrollTo);

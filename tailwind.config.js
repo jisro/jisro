@@ -14,10 +14,11 @@ module.exports = {
       secondary: "#FED095",
       tertiary: "#B5CCFD",
       quarternary: "#202041",
-      twee: "#F9A594",
+      een: "#f6f1d5",
+      twee: "#f69e92",
       drie: "#F99994",
       vier: "#94B0F9",
-      vijf: "#FAA595",
+      vijf: "#E6E7E9",
     },
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],

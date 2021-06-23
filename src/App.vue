@@ -1,5 +1,7 @@
 <template>
-  <div class="wrapper w-full overflow-y overflow-x-hidden text-quarternary">
+  <div
+    class="wrapper w-full overflow-y overflow-x-hidden text-quarternary bg-primary"
+  >
     <router-view to="/" />
   </div>
 </template>

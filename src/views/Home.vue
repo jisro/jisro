@@ -1,32 +1,19 @@
 <template>
-  <div class="content flex flex-col w-screen overflow-x-hidden bg-quarternary">
-    <div
-      class="intro h-screen flex flex-col justify-between bg-secondary items-center"
-    >
-      <div
+  <div class="content flex flex-col h-full w-screen overflow-x-hidden">
+    <div class="intro h-full my-12 flex flex-col justify-between items-center">
+      <!-- <div
         id="navigation"
-        class="nav w-screen flex justify-between h-20 font-semibold text-quarternary"
+        class="nav w-screen flex justify-end h-20 font-semibold text-quarternary"
       >
         <div
-          class="logo flex w-full mx-6 items-center text-2xl lg:text-4xl justify-start animate__animated animate__tada cursor-pointer"
+          class="navigation w-6/12 text-base flex items-center justify-end mx-3"
         >
-          <a v-scroll-to="'#navigation'" class="opacity-100 hover:opacity-70"
-            >Jisro</a
-          >
-        </div>
-        <div
-          class="navigation md:w-6/12 text-base lg:text-2xl flex items-center justify-end mx-3"
-        >
-          <div
-            class="w-24 h-20 md:w-96 flex justify-center items-center cursor-pointer"
-          >
+          <div class="flex justify-center items-center cursor-pointer">
             <a v-scroll-to="'#pom'" class="opacity-100 hover:opacity-70"
               >Werk</a
             >
           </div>
-          <div
-            class="w-24 h-20 md:w-96 flex justify-center items-center cursor-pointer"
-          >
+          <div class="mx-4 flex justify-center items-center cursor-pointer">
             <a
               v-scroll-to="'#contact'"
               to=""
@@ -35,28 +22,13 @@
             >
           </div>
         </div>
-      </div>
-      <div class="hi flex h-1/2 md:flex-shrink-0 justify-center">
+      </div> -->
+      <div class="hi flex flex-col justify-center items-center lg:w-3/5">
         <div
-          class="desc md:items-end flex flex-col w-6/12 items-center md:w-6/12"
+          class="img flex justify-center lg:justify-start w-full fill-current"
         >
-          <div
-            class="introtext ml-8 text-quarternary text-5xl lg:text-7xl font-bold"
-          >
-            <p class="header leading-tight md:leading-tight lg:text-9xl">
-              Hi, <br />
-              ik ben <br />Joris
-            </p>
-            <br />
-            <p class="text-xl lg:text-4xl font-thin md:mt-8 text-quarternary">
-              Ik ben een UI/UX ontwerper <br />
-              op zoek naar een baan.
-            </p>
-          </div>
-        </div>
-        <div class="img flex items-center w-6/12 md:w-1/2 fill-current">
           <svg
-            class="h-full md:w-8/12"
+            class="h-4/5 lg:max-h-64 max-h-36 w-full"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="240 0 340 480"
           >
@@ -77,13 +49,30 @@
             />
           </svg>
         </div>
+        <div
+          class="desc md:items-end flex flex-col h-full w-3/5 items-center justify-center"
+        >
+          <div
+            class="introtext text-quarternary text-5xl lg:text-4xl font-bold"
+          >
+            <p class="header text-4xl lg:text-5xl leading-tight">
+              Hi, ik ben Joris.
+            </p>
+            <p class="text-base font-thin mt-2">
+              Ik ben een UI/UX ontwerper met een passie voor het maken van
+              betekenisvolle interfaces, systemen en ervaringen.
+              <a
+                v-scroll-to="'#contact'"
+                to=""
+                class="cursor-pointer font-semibold hover:bg-quarternary hover:text-primary"
+                >Meer over mij.</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
-      <p
-        class="text-xs rounded-full lg:w-1/5 w-3/5 lg:text-xl font-thin md:mt-8 bg-quarternary text-secondary flex justify-center content-center items-center opacity-40"
-      >
-        Deze website is nog in ontwikkeling.
-      </p>
-      <div class="down h-20 flex justify-center">
+
+      <!-- <div class="down h-20 flex items-end justify-center">
         <a class="cursor-pointer" v-scroll-to="'#pom'"
           ><svg
             class="down2"
@@ -100,12 +89,65 @@
               fill="#202041"
             /></svg
         ></a>
-      </div>
+      </div> -->
     </div>
     <div
-      id="pom"
-      class="h-screen bg-twee flex flex-col justify-center items-center"
+      id="projects"
+      class="projects h-full pt-2 flex flex-col justify-between items-center"
     >
+      <div
+        class="show md:items-end flex flex-col h-full w-3/5 mt-8 items-start justify-center"
+      >
+        <p
+          v-scroll-to="'#projects'"
+          class="text-base font-semibold mt-2 flex lg:opacity-60 hover:opacity-100 cursor-pointer"
+        >
+          Showcase
+          <span class="material-icons fill-current"> arrow_downward </span>
+        </p>
+      </div>
+      <router-link
+      to="/"
+        v-scroll-reveal.reset.reset.reset
+        class="project shadow-xl soma flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-2 rounded-2xl bg-een cursor-pointer"
+      >
+        <div
+          class="introtext h-full w-full text-quarternary text-2xl font-bold cursor-pointer"
+        >
+          <p class="header leading-tight">SOMA</p>
+          <p class="text-base font-thin mt-2">
+            Een smartphone app over lichaamsbewustzijn.
+          </p>
+        </div>
+      </router-link>
+      <div
+        v-scroll-reveal.reset.reset
+        class="project shadow-xl pom flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-2 rounded-2xl bg-twee cursor-pointer"
+      >
+        <div class="introtext text-quarternary text-2xl font-bold">
+          <p class="header leading-tight">POM</p>
+          <p class="text-base font-thin mt-2">
+            Een praatmaatje voor kinderen met een taalachterstand.
+          </p>
+        </div>
+      </div>
+      <div
+        v-scroll-reveal.reset.reset
+        class="project shadow-xl skatemap flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-2 rounded-2xl bg-tertiary cursor-pointer"
+      >
+        <div class="introtext text-quarternary text-2xl font-bold">
+          <p class="header leading-tight">Skatemap</p>
+          <p class="text-base font-thin mt-2">Een app voor skaters.</p>
+        </div>
+      </div>
+    </div>
+    <!-- <p
+        class="text-xs rounded-full lg:w-1/5 w-3/5 lg:text-xl font-thin md:mt-8 bg-quarternary text-secondary flex justify-center content-center items-center opacity-40"
+      >
+        Deze website is nog in ontwikkeling.
+      </p> -->
+
+    <!-- <div id="pom" class="h-screen flex flex-col justify-center items-center">
       <flicking
         class="flicking flicking0 w-screen h-4/5 flex justify-center items-center content-center"
         :options="{
@@ -119,7 +161,7 @@
         "
       >
         <div
-          class="pom h-full w-full bg-twee flex justify-center items-center content-center flex-col md:flex-row"
+          class="pom h-full w-full flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
             class="desc flex w-full lg:w-8/12 h-4/5 flex-col md:w-6/12 content-center justify-center items-center"
@@ -151,7 +193,7 @@
         </div>
         <div
           id="pom2"
-          class="pom h-full w-screen bg-twee flex justify-center items-center content-center flex-col md:flex-row"
+          class="pom h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
             class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
@@ -173,7 +215,7 @@
         </div>
         <div
           id="pom3"
-          class="pom h-full w-screen bg-twee flex justify-center items-center content-center flex-col md:flex-row"
+          class="pom h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
             class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
@@ -194,7 +236,7 @@
 
         <div
           id="pom4"
-          class="pom h-full w-screen bg-twee flex justify-center items-center content-center flex-col md:flex-row"
+          class="pom h-full w-screen flex justify-center items-center content-center flex-col md:flex-row"
         >
           <div
             class="desc flex h-4/5 w-8/12 md:w-6/12 flex-row md:flex-col content-center justify-center"
@@ -225,9 +267,7 @@
       </div>
     </div>
 
-    <div
-      class="soma h-screen bg-drie flex flex-col justify-center items-center"
-    >
+    <div class="soma h-screen flex flex-col justify-center items-center">
       <flicking
         class="flicking flicking1 w-screen h-4/5 flex justify-center items-center content-center"
         :options="{
@@ -372,9 +412,7 @@
       </div>
     </div>
 
-    <div
-      class="skatemap h-screen bg-vier flex flex-col justify-center items-center"
-    >
+    <div class="skatemap h-screen flex flex-col justify-center items-center">
       <flicking
         class="flicking flicking2 w-screen h-4/5 flex justify-center items-center content-center"
         :options="{
@@ -491,45 +529,74 @@
       <div class="progress h-2 w-24 lg:w-2/12 mt-12">
         <div class="thumb" ref="thumb"></div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="contact h-screen flex content-center justify-between flex-col">
+    <!-- <div class="contact h-screen flex content-center justify-between flex-col">
       <div class="cv flex justify-start flex-row md:flex-row">
         <div class="img w-full flex justify-end">
           <a
-            class="cv bg-twee cursor-pointer rounded-t-3xl rounded-full flex justify-center w-4/12"
+            class="cv cursor-pointer rounded-t-3xl rounded-full flex justify-center w-4/12"
             href="/cv.pdf"
             ><img class="h-20 md:h-36 lg:h-48" src="../assets/cv.svg"
           /></a>
         </div>
-      </div>
+      </div> -->
 
-      <div
-        class="desc w-11/12 flex mx-6 md:h-full md:w-6/12 flex-col items-center justify-center"
-      >
-        <div
-          class="contact w-screen h-80 flex justify-center items-center flex-col rounded-lg bg-secondary"
-        >
-          <div class="desc">
-            <div class="text-3xl md:text-4xl lg:text-6xl font-bold">
-              Contact
-              <div class="text-xl md:text-3xl font-thin">
-                <br />
-                <a href="mailto:joris-jansen@hotmail.com">hi@jisro.nl</a> <br />
-                <a href="tel:+31 6 232 454 01">+31 6 232 454 01</a>
-              </div>
-            </div>
+    <div
+      id="over"
+      class="over w-screen h-80 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
+    >
+      <div v-scroll-reveal.reset.reset class="desc w-3/5">
+        <div class="text-4xl font-bold">
+          Over mij
+          <div class="text-base font-thin">
+            <p>Ik woon in Utrecht. Leergierig, empathisch.</p>
+          </div>
+          <div class="text-xl md:text-3xl font-semibold underline">
+            <div
+              class="rounded-full h-1 w-2/5 bg-quarternary opacity-20 my-6"
+            ></div>
+
+            <a class="hover:bg-quarternary hover:text-vijf" href="/cv.pdf"
+              >curriculum vitae</a
+            >
           </div>
         </div>
       </div>
-      <div
-        class="copyright h-8 flex content-center items-center md:justify-center flex-col md:mt-0 text-secondary"
-      >
-        <div
-          class="desc w-11/12 flex h-full md:h-full md:w-6/12 flex-row justify-center mx-6"
-        >
-          © Jisro, 2021
+    </div>
+
+    <div
+      id="contact"
+      class="contact w-screen h-80 flex justify-center items-center flex-col rounded-lg"
+    >
+      <div v-scroll-reveal.reset="{ delay: 250 }" class="desc w-3/5">
+        <div class="text-4xl font-bold">
+          Contact
+          <div class="text-xl md:text-3xl font-thin">
+            <br />
+            <a
+              class="hover:bg-quarternary hover:text-primary"
+              href="mailto:joris-jansen@hotmail.com"
+              >hi@jisro.nl</a
+            >
+            <br />
+            <a
+              class="hover:bg-quarternary hover:text-primary"
+              href="tel:+31 6 232 454 01"
+              >+31 6 232 454 01</a
+            >
+          </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="copyright h-8 flex content-center items-center md:justify-center flex-col md:mt-0 text-quarternary"
+    >
+      <div
+        v-scroll-reveal.reset
+        class="desc w-11/12 flex h-full md:h-full md:w-6/12 flex-row justify-center mx-6"
+      >
+        © Jisro, 2021
       </div>
     </div>
   </div>
@@ -576,5 +643,35 @@ export default {
   width: 0;
   border-radius: inherit;
   background: #202041;
+}
+
+.soma {
+  background-image: url(../assets/soma2.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-clip: top(10px);
+}
+
+.pom {
+  background-image: url(../assets/pom.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.skatemap {
+  background-image: url(../assets/skatemap.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project {
+  transition: all 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 </style>
