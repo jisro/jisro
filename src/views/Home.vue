@@ -83,7 +83,8 @@
           </div>
         </div>
       </router-link>
-      <div
+      <router-link
+        to="/Pom"
         v-scroll-reveal.reset.reset
         class="project shadow-xl pom flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-twee cursor-pointer"
       >
@@ -98,8 +99,9 @@
             <span class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1">Animatie</span>
           </div>
         </div>
-      </div>
-      <div
+      </router-link>
+      <router-link
+        to="/Skatemap"
         v-scroll-reveal.reset.reset
         class="project shadow-xl skatemap flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-tertiary cursor-pointer"
       >
@@ -112,7 +114,7 @@
             <span class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1">Concept</span>
           </div>
         </div>
-      </div>
+      </router-link>
     </div>
 
     <div

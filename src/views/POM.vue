@@ -2,7 +2,7 @@
   <div
     class="content flex flex-col h-full w-screen justify-around overflow-x-hidden text-quarternary"
   >
-    <router-link to="/" class="bg-een"
+    <router-link to="/" class="bg-twee"
       ><span class="material-icons p-4"> arrow_back </span></router-link
     >
     <div class="intro h-full my-12 flex flex-col justify-between items-center">
@@ -13,10 +13,9 @@
           <div
             class="introtext text-quarternary text-5xl lg:text-4xl font-bold"
           >
-            <p class="header text-4xl lg:text-5xl leading-tight">SOMA</p>
+            <p class="header text-4xl lg:text-5xl leading-tight">POM</p>
             <p class="text-base font-thin mt-2">
-              SOMA is een app die op een leuke en ongedwongen manier gebruikers
-              helpt om hun lichaam beter te leren kennen.
+              Pom is een praatmaatje voor laagtaalvaardige kinderen.
             </p>
           </div>
         </div>
@@ -193,33 +192,23 @@
               </span>
             </p>
           </div>
-          <router-link
-            to="/Pom"
-            v-scroll-reveal.reset.reset
-            class="project shadow-xl pom flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-twee cursor-pointer"
-          >
-            <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
-              <p class="header leading-tight">POM</p>
-              <p class="text-base font-thin mt-2">
-                Een praatmaatje voor kinderen met een taalachterstand.
-              </p>
-              <br />
-              <div class="tags flex flex-wrap w-full lg:w-4/5">
-                <span
-                  class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1"
-                  >UX Design</span
-                >
-                <span
-                  class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1"
-                  >Concept</span
-                >
-                <span
-                  class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1"
-                  >Animatie</span
-                >
-              </div>
-            </div>
-          </router-link>
+           <router-link
+        to="/SOMA"
+        v-scroll-reveal.reset.reset.reset
+        class="project shadow-xl soma flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-een cursor-pointer hover:scale-50 transition-transform ease-in"
+      >
+        <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
+          <p class="header leading-tight">SOMA</p>
+          <p class="text-base font-thin mt-2">
+            Een smartphone app over lichaamsbewustzijn.
+          </p><br>
+          <div class="tags flex flex-wrap w-full lg:w-4/5">
+            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">UI Design</span>
+            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">UX Design</span>
+            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">Concept</span>
+          </div>
+        </div>
+      </router-link>
           <router-link
             to="/Skatemap"
             v-scroll-reveal.reset.reset
@@ -263,7 +252,7 @@
 
 <script lang="js">
 export default {
-  name: "Soma",
+  name: "Pom",
 };
 </script>
 
@@ -280,6 +269,13 @@ export default {
 
 .skatemap {
   background-image: url(../assets/skatemap.webp);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.soma {
+  background-image: url(../assets/soma.webp);
   background-position: right bottom;
   background-size: contain;
   background-repeat: no-repeat;
