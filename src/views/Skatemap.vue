@@ -165,7 +165,6 @@
             src="https://player.vimeo.com/video/520710308"
             style="width: 100%; height: 100%"
             frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
@@ -271,6 +270,12 @@ export default {
 
 .skatemap {
   background-image: url(../assets/skatemap.webp);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.soma {
+  background-image: url(../assets/soma.webp);
   background-position: right bottom;
   background-size: contain;
   background-repeat: no-repeat;

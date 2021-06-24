@@ -162,10 +162,9 @@
         >
           <iframe
             class="w-full h-screen flex self-start"
-            src="https://player.vimeo.com/video/520710308"
+            src="https://player.vimeo.com/video/344591611?title=0"
             style="width: 100%; height: 100%"
             frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>

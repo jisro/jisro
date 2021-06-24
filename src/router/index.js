@@ -6,7 +6,6 @@ import Pom from "../views/POM";
 import Skatemap from "../views/Skatemap";
 
 Vue.use(VueRouter);
-
 const routes = [
   {
     path: "/",
@@ -28,7 +27,6 @@ const routes = [
     name: "Skatemap",
     component: Skatemap,
   },
-
 ];
 
 const router = new VueRouter({

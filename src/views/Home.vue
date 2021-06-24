@@ -49,7 +49,6 @@
           </div>
         </div>
       </div>
-
     </div>
     <div
       id="projects"
@@ -63,7 +62,9 @@
           class="text-base font-semibold mt-2 flex lg:opacity-60 hover:opacity-100 cursor-pointer"
         >
           Showcase
-          <span class="material-icons fill-current hover:animate-bounce"> arrow_downward </span>
+          <span class="material-icons fill-current hover:animate-bounce">
+            arrow_downward
+          </span>
         </p>
       </div>
       <router-link
@@ -75,11 +76,21 @@
           <p class="header leading-tight">SOMA</p>
           <p class="text-base font-thin mt-2">
             Een smartphone app over lichaamsbewustzijn.
-          </p><br>
+          </p>
+          <br />
           <div class="tags flex flex-wrap w-full lg:w-4/5">
-            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">UI Design</span>
-            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">UX Design</span>
-            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">Concept</span>
+            <span
+              class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1"
+              >UI Design</span
+            >
+            <span
+              class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1"
+              >UX Design</span
+            >
+            <span
+              class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1"
+              >Concept</span
+            >
           </div>
         </div>
       </router-link>
@@ -92,11 +103,21 @@
           <p class="header leading-tight">POM</p>
           <p class="text-base font-thin mt-2">
             Een praatmaatje voor kinderen met een taalachterstand.
-          </p> <br>
+          </p>
+          <br />
           <div class="tags flex flex-wrap w-full lg:w-4/5">
-            <span class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1">UX Design</span>
-            <span class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1">Concept</span>
-            <span class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1">Animatie</span>
+            <span
+              class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1"
+              >UX Design</span
+            >
+            <span
+              class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1"
+              >Concept</span
+            >
+            <span
+              class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1"
+              >Animatie</span
+            >
           </div>
         </div>
       </router-link>
@@ -107,11 +128,21 @@
       >
         <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
           <p class="header leading-tight">Skatemap</p>
-          <p class="text-base font-thin mt-2">Een app voor skaters.</p> <br>
- <div class="tags flex flex-wrap w-full lg:w-4/5">
-            <span class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1">UI Design</span>
-            <span class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1">UX Design</span>
-            <span class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1">Concept</span>
+          <p class="text-base font-thin mt-2">Een app voor skaters.</p>
+          <br />
+          <div class="tags flex flex-wrap w-full lg:w-4/5">
+            <span
+              class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1"
+              >UI Design</span
+            >
+            <span
+              class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1"
+              >UX Design</span
+            >
+            <span
+              class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1"
+              >Concept</span
+            >
           </div>
         </div>
       </router-link>
@@ -187,7 +218,6 @@ export default {
 </script>
 
 <style scoped>
-
 .introtext {
   line-height: 2rem;
 }
@@ -232,9 +262,8 @@ export default {
   background-repeat: no-repeat;
 }
 
-
 .project:hover {
   transform: scale(1.05);
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 </style>
