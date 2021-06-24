@@ -36,7 +36,7 @@
             <p class="header text-4xl lg:text-5xl leading-tight">
               Hi, ik ben Joris.
             </p>
-            <p class="text-base font-thin mt-2">
+            <p class="text-base font-normal mt-2">
               Ik ben een UI/UX ontwerper die graag betekenisvolle interfaces,
               systemen en ervaringen maakt. <br />
               <a
@@ -155,8 +155,16 @@
       <div v-scroll-reveal.reset.reset class="desc w-3/5">
         <div class="text-4xl font-bold">
           Over mij
-          <div class="text-base font-thin">
-            <p>Ik woon in Utrecht. Leergierig, empathisch.</p>
+          <div class="text-base font-normal mt-4">
+            <p>
+              Ik ben 23 jaar en woon in Utrecht. Ik ben een ontwerper met een
+              multidisiciplinaire aanpak. Ik wil zo veel mogelijk op de hoogte
+              blijven van de nieuwste trends, ontwikkelingen en tools. Niet
+              alleen aangaande de vormgeving, maar ook op het gebied van
+              ontwerpmethoden, front-end, psychologische aspecten van het vak en
+              andere relevante scholing die bijdragen aan mijn ontwikkeling als
+              allround ontwerper. Hier besteed ik veel van mijn vrije tijd aan.
+            </p>
           </div>
           <div class="text-xl md:text-3xl font-semibold underline">
             <div
@@ -178,13 +186,13 @@
       id="contact"
       class="contact w-screen h-80 flex justify-center items-center flex-col rounded-lg"
     >
-      <div v-scroll-reveal.reset="{ delay: 250 }" class="desc w-3/5">
+      <div v-scroll-reveal.reset class="desc w-3/5">
         <div class="text-4xl font-bold">
           Contact
-          <div class="text-xl md:text-3xl font-thin">
+          <div class="text-xl md:text-3xl font-thin underline">
             <br />
             <a
-              class="hover:bg-quarternary hover:text-primary"
+              class="hover:bg-quarternary hover:text-primary underline mb-1"
               href="mailto:joris-jansen@hotmail.com"
               >hi@jisro.nl</a
             >
