@@ -36,13 +36,13 @@
             <p class="header text-4xl lg:text-5xl leading-tight">
               Hi, ik ben Joris.
             </p>
-            <p class="text-base font-normal mt-2">
+            <p class="text-base font-normal mt-2 lg:mt-4 lg:text-lg">
               Ik ben een UI/UX ontwerper die graag betekenisvolle interfaces,
-              systemen en ervaringen maakt. <br />
+              systemen en ervaringen maakt. 
               <a
                 v-scroll-to="'#contact'"
                 to=""
-                class="cursor-pointer font-semibold hover:bg-quarternary hover:text-primary"
+                class="cursor-pointer font-semibold hover:bg-quarternary hover:text-primary underline"
                 >Meer over mij.</a
               >
             </p>
@@ -150,9 +150,9 @@
 
     <div
       id="over"
-      class="over w-screen h-80 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
+      class="over w-screen h-full lg:h-80 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
     >
-      <div v-scroll-reveal.reset.reset class="desc w-3/5">
+      <div v-scroll-reveal.reset.reset class="desc w-3/5 py-8">
         <div class="text-4xl font-bold">
           Over mij
           <div class="text-base font-normal mt-4">
