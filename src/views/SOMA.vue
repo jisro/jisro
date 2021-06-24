@@ -1,9 +1,9 @@
 <template>
   <div class="content flex flex-col h-full w-screen overflow-x-hidden">
+    <router-link to="/"
+      ><span class="material-icons p-4"> arrow_back </span></router-link
+    >
     <div class="intro h-full my-12 flex flex-col justify-between items-center">
-      <router-link to="/"><span class="material-icons">
-arrow_back
-</span></router-link>
       <div class="hi flex flex-col justify-center items-center lg:w-3/5">
         <div
           class="img flex justify-center lg:justify-start w-full fill-current"
@@ -71,69 +71,7 @@ export default {
 </script>
 
 <style scoped>
-/* .content {
-  height: 3700px;
-  background-image: url("../assets/bg.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-/* 
-.nav {
-  background-image: url("../assets/nav.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 .introtext {
   line-height: 2rem;
-}
-
-.outline {
-  background-image: url("../assets/outline.svg");
-  background-repeat: none;
-  background-size: cover;
-}
-
-.progress {
-  border-radius: 5px;
-  background: rgba(32, 32, 65, 0.2);
-  overflow: hidden;
-}
-.thumb {
-  position: relative;
-  height: 100%;
-  width: 0;
-  border-radius: inherit;
-  background: #202041;
-}
-
-.soma {
-  background-image: url(../assets/soma2.png);
-  background-position: right bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-clip: top(10px);
-}
-
-.pom {
-  background-image: url(../assets/pom.png);
-  background-position: right bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.skatemap {
-  background-image: url(../assets/skatemap.png);
-  background-position: right bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.project {
-  transition: all 0.2s ease-in-out;
-}
-
-.project:hover {
-  transform: scale(1.05);
 }
 </style>
