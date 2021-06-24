@@ -130,13 +130,16 @@
             Onderzoek <br />
             <div class="text-lg lg:text-2xl font-thin italic">
               <p>
-                <br />Hoe kan er een product ontwikkeld
-                worden dat zijn gebruikers stimuleert om lichamelijke sensaties
-                te interpreteren, om zo op structurele basis het
-                lichaamsbewustzijn te vergroten?
-                <br><br>
-                <div class="text-base not-italic">Deze webpagina wordt nog aangevuld. Hieronder is het volledige onderzoek te bekijken.</div>
+                <br />Hoe kan er een product ontwikkeld worden dat zijn
+                gebruikers stimuleert om lichamelijke sensaties te
+                interpreteren, om zo op structurele basis het lichaamsbewustzijn
+                te vergroten? <br /><br />
               </p>
+
+              <div class="text-base not-italic">
+                Deze webpagina wordt nog aangevuld. Hieronder is het volledige
+                onderzoek te bekijken.
+              </div>
               <br />
               <a
                 href="/explo.pdf"
@@ -192,22 +195,32 @@
             </p>
           </div>
           <router-link
-        to="/SOMA"
-        v-scroll-reveal.reset.reset.reset
-        class="project shadow-xl soma flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-een cursor-pointer hover:scale-50 transition-transform ease-in"
-      >
-        <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
-          <p class="header leading-tight">SOMA</p>
-          <p class="text-base font-thin mt-2">
-            Een smartphone app over lichaamsbewustzijn.
-          </p><br>
-          <div class="tags flex flex-wrap w-full lg:w-4/5">
-            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">UI Design</span>
-            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">UX Design</span>
-            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">Concept</span>
-          </div>
-        </div>
-      </router-link>
+            to="/SOMA"
+            v-scroll-reveal.reset.reset.reset
+            class="project shadow-xl soma flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-een cursor-pointer hover:scale-50 transition-transform ease-in"
+          >
+            <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
+              <p class="header leading-tight">SOMA</p>
+              <p class="text-base font-thin mt-2">
+                Een smartphone app over lichaamsbewustzijn.
+              </p>
+              <br />
+              <div class="tags flex flex-wrap w-full lg:w-4/5">
+                <span
+                  class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1"
+                  >UI Design</span
+                >
+                <span
+                  class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1"
+                  >UX Design</span
+                >
+                <span
+                  class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1"
+                  >Concept</span
+                >
+              </div>
+            </div>
+          </router-link>
           <router-link
             to="/Pom"
             v-scroll-reveal.reset.reset

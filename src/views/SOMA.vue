@@ -130,14 +130,14 @@
           <div class="text-xl font-bold">
             Onderzoek <br />
             <div class="text-lg lg:text-2xl font-thin italic">
-              <p>
-                <br />Hoe kan er een product ontwikkeld
-                worden dat zijn gebruikers stimuleert om lichamelijke sensaties
-                te interpreteren, om zo op structurele basis het
-                lichaamsbewustzijn te vergroten?
-                <br><br>
-                <div class="text-base not-italic">Deze webpagina wordt nog aangevuld. Hieronder is het volledige onderzoek te bekijken.</div>
-              </p>
+              <br />Hoe kan er een product ontwikkeld worden dat zijn gebruikers
+              stimuleert om lichamelijke sensaties te interpreteren, om zo op
+              structurele basis het lichaamsbewustzijn te vergroten?
+              <br /><br />
+              <div class="text-base not-italic">
+                Deze webpagina wordt nog aangevuld. Hieronder is het volledige
+                onderzoek te bekijken.
+              </div>
               <br />
               <a
                 href="/explo.pdf"
