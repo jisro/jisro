@@ -63,19 +63,24 @@
           class="text-base font-semibold mt-2 flex lg:opacity-60 hover:opacity-100 cursor-pointer"
         >
           Showcase
-          <span class="material-icons fill-current"> arrow_downward </span>
+          <span class="material-icons fill-current hover:animate-bounce"> arrow_downward </span>
         </p>
       </div>
       <router-link
         to="/SOMA"
         v-scroll-reveal.reset.reset.reset
-        class="project shadow-xl soma flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-een cursor-pointer"
+        class="project shadow-xl soma flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-een cursor-pointer hover:scale-50 transition-transform ease-in"
       >
         <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
           <p class="header leading-tight">SOMA</p>
           <p class="text-base font-thin mt-2">
             Een smartphone app over lichaamsbewustzijn.
-          </p>
+          </p><br>
+          <div class="tags flex flex-wrap w-full lg:w-4/5">
+            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">UI Design</span>
+            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">UX Design</span>
+            <span class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1">Concept</span>
+          </div>
         </div>
       </router-link>
       <div
@@ -86,7 +91,12 @@
           <p class="header leading-tight">POM</p>
           <p class="text-base font-thin mt-2">
             Een praatmaatje voor kinderen met een taalachterstand.
-          </p>
+          </p> <br>
+          <div class="tags flex flex-wrap w-full lg:w-4/5">
+            <span class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1">UX Design</span>
+            <span class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1">Concept</span>
+            <span class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1">Animatie</span>
+          </div>
         </div>
       </div>
       <div
@@ -95,7 +105,12 @@
       >
         <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
           <p class="header leading-tight">Skatemap</p>
-          <p class="text-base font-thin mt-2">Een app voor skaters.</p>
+          <p class="text-base font-thin mt-2">Een app voor skaters.</p> <br>
+ <div class="tags flex flex-wrap w-full lg:w-4/5">
+            <span class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1">UI Design</span>
+            <span class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1">UX Design</span>
+            <span class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1">Concept</span>
+          </div>
         </div>
       </div>
     </div>
@@ -112,7 +127,7 @@
           </div>
           <div class="text-xl md:text-3xl font-semibold underline">
             <div
-              class="rounded-full h-1 w-2/5 bg-quarternary opacity-20 my-6"
+              class="rounded-sm h-1 w-1/5 bg-quarternary opacity-10 my-6"
             ></div>
 
             <a
@@ -215,11 +230,9 @@ export default {
   background-repeat: no-repeat;
 }
 
-.project {
-  transition: all 0.2s ease-in-out;
-}
 
 .project:hover {
   transform: scale(1.05);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 </style>
