@@ -38,7 +38,7 @@
             </p>
             <p class="text-base font-normal mt-2 lg:mt-4 lg:text-lg">
               Ik ben een UI/UX ontwerper die graag betekenisvolle interfaces,
-              systemen en ervaringen maakt. 
+              systemen en ervaringen maakt. <br>
               <a
                 v-scroll-to="'#contact'"
                 to=""
