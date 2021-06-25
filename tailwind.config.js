@@ -1,10 +1,5 @@
 module.exports = {
-  purge: {
-    enabled: true,
-    content: [
-        './**/*.html'
-    ]
-  },
+  purge: {},
   darkMode: false,
   theme: {
     screens: {
