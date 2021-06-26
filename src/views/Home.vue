@@ -38,7 +38,7 @@
             </p>
             <p class="text-base font-normal mt-2 lg:mt-4 lg:text-lg">
               Ik ben een UI/UX ontwerper die graag betekenisvolle interfaces,
-              systemen en ervaringen maakt. <br>
+              systemen en ervaringen maakt. <br />
               <a
                 v-scroll-to="'#contact'"
                 to=""
@@ -59,12 +59,10 @@
       >
         <p
           v-scroll-to="'#projects'"
-          class="text-base font-semibold mt-2 flex lg:opacity-60 hover:opacity-100 cursor-pointer"
+          class="text-base font-semibold mt-2 flex opacity-60 hover:opacity-100 cursor-pointer animate-bounce"
         >
           Showcase
-          <span class="material-icons fill-current hover:animate-bounce">
-            arrow_downward
-          </span>
+          <span class="material-icons fill-current"> arrow_downward </span>
         </p>
       </div>
       <router-link
@@ -77,8 +75,7 @@
           <p class="text-base font-thin mt-2">
             Een smartphone app over lichaamsbewustzijn.
           </p>
-          <br />
-          <div class="tags flex flex-wrap w-full lg:w-4/5">
+          <div class="tags flex flex-wrap w-full lg:w-4/5 mt-2">
             <span
               class="rounded-lg bg-quarternary text-een opacity-80 h-full w-24 text-base text-center m-1"
               >UI Design</span
@@ -104,8 +101,7 @@
           <p class="text-base font-thin mt-2">
             Een praatmaatje voor kinderen met een taalachterstand.
           </p>
-          <br />
-          <div class="tags flex flex-wrap w-full lg:w-4/5">
+          <div class="tags flex flex-wrap w-full lg:w-4/5 mt-2">
             <span
               class="rounded-lg bg-quarternary text-twee opacity-80 h-full w-24 text-base text-center m-1"
               >UX Design</span
@@ -129,8 +125,7 @@
         <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
           <p class="header leading-tight">Skatemap</p>
           <p class="text-base font-thin mt-2">Een app voor skaters.</p>
-          <br />
-          <div class="tags flex flex-wrap w-full lg:w-4/5">
+          <div class="tags flex flex-wrap w-full lg:w-4/5 mt-2">
             <span
               class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1"
               >UI Design</span
@@ -142,6 +137,41 @@
             <span
               class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1"
               >Concept</span
+            >
+          </div>
+        </div>
+      </router-link>
+      <router-link
+        to="/Divers"
+        v-scroll-reveal.reset.reset
+        class="project shadow-xl divers flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-zes cursor-pointer"
+      >
+        <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
+          <p class="header leading-tight">Diversen</p>
+          <p class="text-base w-11/12 font-thin mt-2">
+            Meer projecten die zijn gemaakt voor hobby of studie.
+          </p>
+          <div class="tags flex flex-wrap w-full lg:w-4/5 mt-2 text-zes">
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-32 text-base text-center m-1"
+              >Critical Design</span
+            >
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-24 text-base text-center my-1"
+              >Concept</span
+            >
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-28 text-base text-center m-1"
+              >Data Design</span
+            >
+
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-20 px-1 text-base text-center my-1"
+              >Games</span
+            >
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-6 text-base text-center m-1"
+              >...</span
             >
           </div>
         </div>
@@ -256,6 +286,13 @@ export default {
   background-repeat: no-repeat;
 }
 
+/* .divers {
+  background-image: url(../assets/divers.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
 .pom {
   background-image: url(../assets/pom.webp);
   background-position: right bottom;
@@ -271,7 +308,12 @@ export default {
 }
 
 .project:hover {
+  -moz-transform: scale(1.05);
   transform: scale(1.05);
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  -moz-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 </style>

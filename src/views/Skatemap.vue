@@ -13,7 +13,12 @@
           <div
             class="introtext text-quarternary text-5xl lg:text-4xl font-bold"
           >
-            <p class="header text-4xl lg:text-5xl leading-tight">Skatemap</p>
+            <LottieAnim
+              ref="logoAnim"
+              class="h-full w-full mb-6"
+              :loop="true"
+              :animationData="require('@/assets/logo.json')"
+            />
             <p class="text-base font-thin mt-2">
               Skatemap is een app voor skaters.
             </p>
@@ -265,8 +270,13 @@
 </template>
 
 <script lang="js">
+import LottieAnim from "../components/LottieAnim.vue";
+
 export default {
   name: "Skatemap",
+  components: {
+    LottieAnim,
+  },
 };
 </script>
 

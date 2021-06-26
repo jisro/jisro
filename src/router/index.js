@@ -4,6 +4,7 @@ import Home from "../views/Home";
 import Soma from "../views/SOMA";
 import Pom from "../views/POM";
 import Skatemap from "../views/Skatemap";
+import Divers from "../views/Divers";
 
 Vue.use(VueRouter);
 const routes = [
@@ -26,6 +27,11 @@ const routes = [
     path: "/Skatemap",
     name: "Skatemap",
     component: Skatemap,
+  },
+  {
+    path: "/Divers",
+    name: "Divers",
+    component: Divers,
   },
 ];
 

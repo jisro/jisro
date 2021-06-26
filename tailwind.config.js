@@ -19,6 +19,8 @@ module.exports = {
       drie: "#F99994",
       vier: "#94B0F9",
       vijf: "#E6E7E9",
+      zes: "#C2EFCA",
+      zeven: "#A0ADB9",
     },
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
