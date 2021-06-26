@@ -125,7 +125,11 @@
           </svg>
         </div>
       </div>
-
+ <div
+        id="over"
+        class="sc w-screen h-screen py-8 flex justify-center items-center flex-col rounded-lg mt-8"
+      >
+ </div>
       <div
         id="over"
         class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg"
@@ -279,6 +283,14 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.sc {
+  background-image: url(../assets/skatemapsc.png);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 .project:hover {
   transform: scale(1.05);

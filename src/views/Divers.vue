@@ -13,10 +13,11 @@
           <div
             class="introtext text-quarternary text-5xl lg:text-4xl font-bold"
           >
-            <p class="header text-4xl lg:text-5xl leading-tight">Divers</p>
+            <p class="header text-4xl lg:text-5xl leading-tight">
+              Diverse projecten
+            </p>
             <p class="text-base font-thin mt-2">
-              SOMA is een app die op een leuke en ongedwongen manier gebruikers
-              helpt om hun lichaam beter te leren kennen.
+              Op deze pagina zijn meer projecten van mij te vinden.
             </p>
           </div>
         </div>
@@ -128,22 +129,26 @@
       >
         <div class="desc w-3/5">
           <div class="text-xl font-bold">
-            Onderzoek <br />
+            Dutch Delicacies <br />
             <div class="text-lg lg:text-2xl font-thin italic">
-              <br />Hoe kan er een product ontwikkeld worden dat zijn gebruikers
-              stimuleert om lichamelijke sensaties te interpreteren, om zo op
-              structurele basis het lichaamsbewustzijn te vergroten?
-              <br /><br />
+              <br />Dutch Delicacies is een website waarop je kunt zien hoeveel
+              advertentie-inkomsten u heeft gegenereerd voor uw favoriete
+              artiesten. Het laat je zien hoeveel geld ze van je hebben
+              verdiend, maar ook wat voor typisch nederlands eten ze met dit
+              geld kunnen kopen. Deze website is gemaakt met de bedoeling om op
+              een speelse manier kennis te maken met de Nederlandse keuken aan
+              anderen. Mijn rol in dit project concepting, coding en grafisch
+              ontwerp. <br /><br />
               <div class="text-base not-italic">
                 Deze webpagina wordt nog aangevuld. Hieronder is het volledige
                 onderzoek te bekijken.
               </div>
               <br />
-              <a
+              <!-- <a
                 href="/explo.pdf"
                 class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base not-italic text-center mb-8 p-1"
                 >Onderzoeksdocument</a
-              >
+              > -->
             </div>
           </div>
         </div>
@@ -154,11 +159,10 @@
       >
         <div class="desc w-3/5 flex-col">
           <div class="text-xl font-bold">
-            Resultaat <br />
             <div class="text-base font-thin italic"></div>
           </div>
         </div>
-        <div
+        <!-- <div
           class="videoframe w-screen lg:w-3/5 h-72 lg:h-96 flex flex-grow p-1/2"
         >
           <iframe
@@ -168,12 +172,12 @@
             frameborder="0"
             allowfullscreen
           ></iframe>
-        </div>
-        <a
+        </div> -->
+        <!-- <a
           href="https://framer.com/share/SOMA--8FvLmVNE3r0BWyvA5PdM/hNsTfrRGW"
           class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base text-center mb-8 lg:mt-8"
           >Ervaar op framer!</a
-        >
+        > -->
 
         <div
           id="projects"
