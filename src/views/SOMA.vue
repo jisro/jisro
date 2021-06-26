@@ -6,7 +6,7 @@
       ><span class="material-icons p-4"> arrow_back </span></router-link
     >
     <div class="intro h-full my-12 flex flex-col justify-between items-center">
-      <div class="hi flex justify-center items-center w-3/5">
+      <div class="hi flex justify-center items-center w-4/5 lg:w-2/5">
         <div
           class="desc md:items-end flex flex-col h-full w-full items-center justify-start"
         >
@@ -14,7 +14,7 @@
             class="introtext text-quarternary text-5xl lg:text-4xl font-bold"
           >
             <p class="header text-4xl lg:text-5xl leading-tight">SOMA</p>
-            <p class="text-base font-thin mt-2">
+            <p class="text-base font-normal mt-2">
               SOMA is een app die op een leuke en ongedwongen manier gebruikers
               helpt om hun lichaam beter te leren kennen.
             </p>
@@ -124,38 +124,34 @@
 
       <div
         id="over"
-        class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
+        class="over w-screen h-full flex justify-center items-center flex-col rounded-lg"
       >
-        <div class="desc w-3/5">
-          <div class="text-xl font-bold">
-            Onderzoek <br />
-            <div class="text-lg lg:text-2xl font-thin italic">
-              <br />Hoe kan er een product ontwikkeld worden dat zijn gebruikers
-              stimuleert om lichamelijke sensaties te interpreteren, om zo op
-              structurele basis het lichaamsbewustzijn te vergroten?
-              <br /><br />
-              <div class="text-base not-italic">
-                Deze webpagina wordt nog aangevuld. Hieronder is het volledige
-                onderzoek te bekijken.
-              </div>
-              <br />
-              <a
-                href="/explo.pdf"
-                class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base not-italic text-center mb-8 p-1"
-                >Onderzoeksdocument</a
-              >
+        <div class="desc w-4/5 lg:w-2/5">
+          <div class="text-lg lg:text-2xl font-thin italic">
+            <br />Hoe kan er een product ontwikkeld worden dat zijn gebruikers
+            stimuleert om lichamelijke sensaties te interpreteren, om zo op
+            structurele basis het lichaamsbewustzijn te vergroten? <br /><br />
+            <div class="text-base not-italic">
+              Deze webpagina wordt nog aangevuld. Hieronder is het volledige
+              onderzoek te bekijken.
             </div>
+            <br />
+            <a
+              href="/explo.pdf"
+              class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base not-italic text-center mb-8 p-4"
+              >Onderzoeksdocument</a
+            >
           </div>
         </div>
       </div>
       <div
         id="over"
-        class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg mt-8"
+        class="over w-screen h-full mt-8 py-8 flex justify-center items-center flex-col rounded-lg"
       >
-        <div class="desc w-3/5 flex-col">
+        <div class="desc w-2/5 flex-col md:mb-8">
           <div class="text-xl font-bold">
             Resultaat <br />
-            <div class="text-base font-thin italic"></div>
+            <div class="text-base font-normal italic"></div>
           </div>
         </div>
         <div
@@ -171,7 +167,7 @@
         </div>
         <a
           href="https://framer.com/share/SOMA--8FvLmVNE3r0BWyvA5PdM/hNsTfrRGW"
-          class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base text-center mb-8 lg:mt-8"
+          class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-72 text-base text-center mb-8 lg:mt-8 p-4"
           >Ervaar op framer!</a
         >
 
@@ -180,7 +176,7 @@
           class="projects h-full w-screen flex flex-col justify-between items-center mt-8"
         >
           <div
-            class="show md:items-end flex flex-col h-full w-3/5 mt-8 items-start justify-center"
+            class="show md:items-end flex flex-col h-full w-4/5 mt-8 items-start justify-center"
           >
             <p
               v-scroll-to="'#projects'"
@@ -195,11 +191,11 @@
           <router-link
             to="/Pom"
             v-scroll-reveal.reset.reset
-            class="project shadow-xl pom flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-twee cursor-pointer"
+            class="project shadow-xl pom flex flex-col h-96 w-4/5 my-8 justify-start p-8 rounded-2xl bg-twee cursor-pointer"
           >
             <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
               <p class="header leading-tight">POM</p>
-              <p class="text-base font-thin mt-2">
+              <p class="text-base font-normal mt-2">
                 Een praatmaatje voor kinderen met een taalachterstand.
               </p>
               <br />
@@ -222,11 +218,11 @@
           <router-link
             to="/Skatemap"
             v-scroll-reveal.reset.reset
-            class="project shadow-xl skatemap flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-tertiary cursor-pointer"
+            class="project shadow-xl skatemap flex flex-col h-96 w-4/5 my-8 justify-start p-8 rounded-2xl bg-tertiary cursor-pointer"
           >
             <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
               <p class="header leading-tight">Skatemap</p>
-              <p class="text-base font-thin mt-2">Een app voor skaters.</p>
+              <p class="text-base font-normal mt-2">Een app voor skaters.</p>
               <br />
               <div class="tags flex flex-wrap w-full lg:w-4/5">
                 <span

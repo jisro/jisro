@@ -6,15 +6,15 @@
       ><span class="material-icons p-4"> arrow_back </span></router-link
     >
     <div class="intro h-full my-12 flex flex-col justify-between items-center">
-      <div class="hi flex justify-center items-center w-3/5">
+      <div class="hi flex justify-center items-center w-4/5 lg:w-2/5">
         <div
-          class="desc md:items-end flex flex-col h-full w-full items-center justify-start"
+          class="desc md:items-end flex flex-col h-full items-center justify-start"
         >
           <div
             class="introtext text-quarternary text-5xl lg:text-4xl font-bold"
           >
             <p class="header text-4xl lg:text-5xl leading-tight">POM</p>
-            <p class="text-base font-thin mt-2">
+            <p class="text-lg font-thin mt-2">
               Pom is een praatmaatje voor laagtaalvaardige kinderen.
             </p>
           </div>
@@ -123,27 +123,22 @@
 
       <div
         id="over"
-        class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
+        class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg"
       >
-        <div class="desc w-3/5">
-          <div class="text-xl font-bold">
-            Onderzoek <br />
-            <div class="text-lg lg:text-2xl font-thin italic">
-              <br />Hoe kan er een product ontwikkeld worden dat zijn gebruikers
-              stimuleert om lichamelijke sensaties te interpreteren, om zo op
-              structurele basis het lichaamsbewustzijn te vergroten?
-              <br /><br />
-              <div class="text-base not-italic">
-                Deze webpagina wordt nog aangevuld. Hieronder is het volledige
-                onderzoek te bekijken.
-              </div>
-              <br />
-              <a
-                href="/explo.pdf"
-                class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base not-italic text-center mb-8 p-1"
-                >Onderzoeksdocument</a
-              >
+        <div class="desc w-4/5 lg:w-2/5">
+          <div class="text-lg lg:text-2xl font-thin">
+            <br />In samenwerking met de VoorleesExpress heb ik samen met Sander
+            een concept uitgewerkt voor laagtaalvaardige kinderen. <br /><br />
+            <div class="text-base">
+              Deze webpagina wordt nog aangevuld. Hieronder is het volledige
+              onderzoek te bekijken.
             </div>
+            <br />
+            <a
+              href="/verslag.pdf"
+              class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base not-italic text-center mb-8 p-4"
+              >Onderzoeksdocument</a
+            >
           </div>
         </div>
       </div>
@@ -151,7 +146,7 @@
         id="over"
         class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg mt-8"
       >
-        <div class="desc w-3/5 flex-col">
+        <div class="desc w-3/5 lg:w-2/5 flex-col lg:mb-8">
           <div class="text-xl font-bold">
             Resultaat <br />
             <div class="text-base font-thin italic"></div>
@@ -168,11 +163,6 @@
             allowfullscreen
           ></iframe>
         </div>
-        <a
-          href="https://framer.com/share/SOMA--8FvLmVNE3r0BWyvA5PdM/hNsTfrRGW"
-          class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base text-center mb-8 lg:mt-8"
-          >Ervaar op framer!</a
-        >
 
         <div
           id="projects"

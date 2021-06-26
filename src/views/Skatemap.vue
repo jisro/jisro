@@ -6,7 +6,7 @@
       ><span class="material-icons p-4"> arrow_back </span></router-link
     >
     <div class="intro h-full my-12 flex flex-col justify-between items-center">
-      <div class="hi flex justify-center items-center w-3/5">
+      <div class="hi flex justify-center items-center w-4/5 lg:w-2/5">
         <div
           class="desc md:items-end flex flex-col h-full w-full items-center justify-start"
         >
@@ -128,30 +128,22 @@
 
       <div
         id="over"
-        class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
+        class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg"
       >
-        <div class="desc w-3/5">
-          <div class="text-xl font-bold">
-            Onderzoek <br />
-            <div class="text-lg lg:text-2xl font-thin italic">
-              <p>
-                <br />Hoe kan er een product ontwikkeld worden dat zijn
-                gebruikers stimuleert om lichamelijke sensaties te
-                interpreteren, om zo op structurele basis het lichaamsbewustzijn
-                te vergroten? <br /><br />
-              </p>
+        <div class="desc w-4/5 lg:w-2/5">
+          <div class="text-lg lg:text-2xl font-thin italic">
+            <p>
+              <br />Als skater heb ik ervaren hoe lastig het soms is om een
+              geschikt skatepark te vinden. Skatemap brengt alle nederlandse
+              skateparken in kaart, en maakt het mogelijk om te filteren op
+              specifieke obstakels die aanwezig zijn. <br /><br />
+            </p>
 
-              <div class="text-base not-italic">
-                Deze webpagina wordt nog aangevuld. Hieronder is het volledige
-                onderzoek te bekijken.
-              </div>
-              <br />
-              <a
-                href="/explo.pdf"
-                class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base not-italic text-center mb-8 p-1"
-                >Onderzoeksdocument</a
-              >
+            <div class="text-base not-italic">
+              Deze webpagina wordt nog aangevuld. Hieronder is het volledige
+              onderzoek te bekijken.
             </div>
+            <br />
           </div>
         </div>
       </div>
@@ -159,27 +151,11 @@
         id="over"
         class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg mt-8"
       >
-        <div class="desc w-3/5 flex-col">
-          <div class="text-xl font-bold">
-            Resultaat <br />
-            <div class="text-base font-thin italic"></div>
-          </div>
-        </div>
-        <div
-          class="videoframe w-screen lg:w-3/5 h-72 lg:h-96 flex flex-grow p-1/2"
-        >
-          <iframe
-            class="w-full h-screen flex self-start"
-            src="https://player.vimeo.com/video/520710308"
-            style="width: 100%; height: 100%"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <div class="desc w-3/5 flex-col"></div>
         <a
-          href="https://framer.com/share/SOMA--8FvLmVNE3r0BWyvA5PdM/hNsTfrRGW"
-          class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-36 text-base text-center mb-8 lg:mt-8"
-          >Ervaar op framer!</a
+          href="https://www.figma.com/proto/rlCksNCLq6MeQ7S8OAXtUi/Skatemap-mobile?node-id=191%3A0&scaling=scale-down&page-id=0%3A1"
+          class="rounded-lg bg-quarternary text-primary opacity-80 h-full w-64 text-base text-center mb-8 lg:mt-8 p-4"
+          >Ervaar op figma!</a
         >
 
         <div

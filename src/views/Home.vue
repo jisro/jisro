@@ -1,7 +1,7 @@
 <template>
   <div class="content flex flex-col h-full w-screen overflow-x-hidden">
     <div class="intro h-full my-12 flex flex-col justify-between items-center">
-      <div class="hi flex flex-col justify-center items-center lg:w-3/5">
+      <div class="hi flex flex-col justify-center items-center">
         <div
           class="img flex justify-center lg:justify-start w-full fill-current"
         >
@@ -40,7 +40,7 @@
               Ik ben een UI/UX ontwerper die graag betekenisvolle interfaces,
               systemen en ervaringen maakt. <br />
               <a
-                v-scroll-to="'#contact'"
+                v-scroll-to="'#over'"
                 to=""
                 class="cursor-pointer font-semibold hover:bg-quarternary hover:text-primary underline"
                 >Meer over mij.</a
@@ -68,7 +68,7 @@
       <router-link
         to="/SOMA"
         v-scroll-reveal.reset.reset.reset
-        class="project shadow-xl soma flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-een cursor-pointer hover:scale-50 transition-transform ease-in"
+        class="project shadow-xl soma flex flex-col h-96 w-4/5 my-8 justify-start p-8 rounded-2xl bg-een cursor-pointer hover:scale-50 transition-transform ease-in"
       >
         <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
           <p class="header leading-tight">SOMA</p>
@@ -94,11 +94,11 @@
       <router-link
         to="/Pom"
         v-scroll-reveal.reset.reset
-        class="project shadow-xl pom flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-twee cursor-pointer"
+        class="project shadow-xl pom flex flex-col h-96 w-4/5 my-8 justify-start p-8 rounded-2xl bg-twee cursor-pointer"
       >
         <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
           <p class="header leading-tight">POM</p>
-          <p class="text-base font-thin mt-2">
+          <p class="text-base font-normal mt-2">
             Een praatmaatje voor kinderen met een taalachterstand.
           </p>
           <div class="tags flex flex-wrap w-full lg:w-4/5 mt-2">
@@ -120,11 +120,11 @@
       <router-link
         to="/Skatemap"
         v-scroll-reveal.reset.reset
-        class="project shadow-xl skatemap flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-tertiary cursor-pointer"
+        class="project shadow-xl skatemap flex flex-col h-96 w-4/5 my-8 justify-start p-8 rounded-2xl bg-tertiary cursor-pointer"
       >
         <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
           <p class="header leading-tight">Skatemap</p>
-          <p class="text-base font-thin mt-2">Een app voor skaters.</p>
+          <p class="text-base font-normal mt-2">Een app voor skaters.</p>
           <div class="tags flex flex-wrap w-full lg:w-4/5 mt-2">
             <span
               class="rounded-lg bg-quarternary text-vier opacity-80 h-full w-24 text-base text-center m-1"
@@ -144,11 +144,11 @@
       <router-link
         to="/Divers"
         v-scroll-reveal.reset.reset
-        class="project shadow-xl divers flex flex-col h-96 w-4/5 lg:w-3/5 my-8 justify-start p-8 rounded-2xl bg-zes cursor-pointer"
+        class="project shadow-xl divers flex flex-col h-96 w-4/5 my-8 justify-start p-8 rounded-2xl bg-zes cursor-pointer"
       >
         <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
           <p class="header leading-tight">Diversen</p>
-          <p class="text-base w-11/12 font-thin mt-2">
+          <p class="text-base w-11/12 font-normal mt-2">
             Meer projecten die zijn gemaakt voor hobby of studie.
           </p>
           <div class="tags flex flex-wrap w-full lg:w-4/5 mt-2 text-zes">
@@ -179,21 +179,21 @@
     </div>
 
     <div
+      v-scroll-reveal.reset.reset
       id="over"
-      class="over w-screen h-full lg:h-80 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
+      class="over w-screen h-screen lg:h-full lg:py-24 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
     >
-      <div v-scroll-reveal.reset.reset class="desc w-3/5 py-8">
+      <div class="desc w-4/5 lg:w-3/5 py-8 px-4">
         <div class="text-4xl font-bold">
           Over mij
           <div class="text-base font-normal mt-4">
             <p>
-              Ik ben 23 jaar en woon in Utrecht. Ik ben een ontwerper met een
-              multidisiciplinaire aanpak. Ik wil zo veel mogelijk op de hoogte
-              blijven van de nieuwste trends, ontwikkelingen en tools. Niet
-              alleen aangaande de vormgeving, maar ook op het gebied van
-              ontwerpmethoden, front-end, psychologische aspecten van het vak en
-              andere relevante scholing die bijdragen aan mijn ontwikkeling als
-              allround ontwerper. Hier besteed ik veel van mijn vrije tijd aan.
+              Ik ben een 23 jarige UX/UI ontwerper uit Utrecht. Het liefst ben
+              ik zoveel mogelijk op de hoogte van de nieuwste trends,
+              ontwikkelingen en tools. Niet alleen aangaande de vormgeving, maar
+              ook op het gebied van ontwerpmethoden, front-end, psychologische
+              aspecten van het vak en andere relevante scholing die bijdragen
+              aan mijn ontwikkeling als allround ontwerper.
             </p>
           </div>
           <div class="text-xl md:text-3xl font-semibold underline">
