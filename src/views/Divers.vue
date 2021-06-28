@@ -6,9 +6,9 @@
       ><span class="material-icons p-4"> arrow_back </span></router-link
     >
     <div class="intro h-full my-12 flex flex-col justify-between items-center">
-      <div class="hi flex justify-center items-center w-4/5">
+      <div class="hi flex justify-center items-center w-4/5 lg:w-2/5">
         <div
-          class="desc md:items-end flex flex-col h-full w-full items-center justify-start"
+          class="desc md:items-end flex flex-col h-full w-3/5 items-center justify-start"
         >
           <div
             class="introtext text-quarternary text-5xl lg:text-4xl font-bold w-full"
@@ -127,10 +127,10 @@
         id="over"
         class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
       >
-        <div class="desc w-4/5">
+        <div class="desc w-4/5 lg:w-2/5">
           <div class="text-xl font-bold">
             Dutch Delicacies <br />
-            <div class="text-lg lg:text-2xl font-thin">
+            <div class="text-lg font-thin">
               <br />
               Voor een data hacking project is Dutch Delicacies gemaakt. Dutch
               Delicacies is een website waarop je kunt zien hoeveel
@@ -160,10 +160,10 @@
         id="over"
         class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg mt-8"
       >
-        <div class="desc w-4/5">
+        <div class="desc w-4/5 lg:w-2/5">
           <div class="text-xl font-bold">
             Rebirth Control <br />
-            <div class="text-lg lg:text-2xl font-thin">
+            <div class="text-lg  font-thin">
               <br />
               Rebirth Control is een installatie die het gevoel van een
               wedergeboorte laat ervaren. Door verschillende zintuigen te
@@ -201,10 +201,10 @@
         id="over"
         class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg bg-vijf mt-8"
       >
-        <div class="desc w-4/5">
+        <div class="desc w-4/5 lg:w-2/5">
           <div class="text-xl font-bold">
             HCD Box <br />
-            <div class="text-lg lg:text-2xl font-thin">
+            <div class="text-lg  font-thin">
               <br />
               Voor een critical design project is de HCD box gemaakt. <br><br>  
 De Human-Centered Design Terminal is een verplichte tool voor ontwerpers om hun apps te laten certificeren en in de webshops te plaatsen. Wanneer een ontwerper een app heeft gemaakt die klaar is om in de app store te plaatsen, moet deze eerst worden gereguleerd.
@@ -234,10 +234,10 @@ Dit beperkt de kracht van de ontwerper en maakt de applicatie gebruiksvriendelij
         id="over"
         class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg mt-8"
       >
-        <div class="desc w-4/5">
+        <div class="desc w-4/5 lg:w-2/5">
           <div class="text-xl font-bold">
             The Pyramid of Human Progression <br />
-            <div class="text-lg lg:text-2xl font-thin">
+            <div class="text-lg  font-thin">
               <br />
               The Pyramid of Human Progression is a videogame that takes a critical look at technological progression.
 <br><br>
