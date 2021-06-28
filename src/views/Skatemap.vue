@@ -321,8 +321,8 @@ export default {
 .sc {
   background-image: url(../assets/skatemapsc.png);
   background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 .project:hover {

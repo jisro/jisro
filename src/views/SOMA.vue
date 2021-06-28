@@ -240,6 +240,41 @@
               </div>
             </div>
           </router-link>
+          <router-link
+        to="/Divers"
+        v-scroll-reveal.reset.reset
+        class="project shadow-xl divers flex flex-col h-96 w-4/5 my-8 justify-start p-8 rounded-2xl bg-zes cursor-pointer"
+      >
+        <div class="introtext lg:w-2/5 text-quarternary text-2xl font-bold">
+          <p class="header leading-tight">Diversen</p>
+          <p class="text-base w-11/12 font-normal mt-2">
+            Meer projecten die zijn gemaakt voor hobby of studie.
+          </p>
+          <div class="tags flex flex-wrap w-full lg:w-4/5 mt-2 text-zes">
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-32 text-base text-center m-1"
+              >Critical Design</span
+            >
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-24 text-base text-center my-1"
+              >Concept</span
+            >
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-28 text-base text-center m-1"
+              >Data Design</span
+            >
+
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-20 px-1 text-base text-center my-1"
+              >Games</span
+            >
+            <span
+              class="rounded-lg bg-quarternary opacity-80 h-full w-6 text-base text-center m-1"
+              >...</span
+            >
+          </div>
+        </div>
+      </router-link>
         </div>
       </div>
     </div>
