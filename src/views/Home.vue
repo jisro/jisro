@@ -286,12 +286,12 @@ export default {
   background-repeat: no-repeat;
 }
 
-/* .divers {
-  background-image: url(../assets/divers.png);
+.divers {
+  background-image: url(../assets/divers.webp);
   background-position: right bottom;
   background-size: contain;
   background-repeat: no-repeat;
-} */
+}
 
 .pom {
   background-image: url(../assets/pom.webp);

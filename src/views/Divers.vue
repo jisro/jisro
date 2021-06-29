@@ -258,7 +258,7 @@ In The Great Pyramid of Human Progression, the player must view and worship all 
           </div>
         </div>
        <div
-          class="videoframe w-screen lg:w-3/5 h-72 lg:h-96 flex flex-grow p-1/2"
+          class="videoframe w-screen lg:w-3/5 h-72 lg:h-96 flex flex-grow p-1/2 justify-center"
         >
           <img src="../assets/pyramid.png">
         </div>

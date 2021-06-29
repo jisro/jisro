@@ -301,6 +301,14 @@ export default {
   background-repeat: no-repeat;
 }
 
+
+.divers {
+  background-image: url(../assets/divers.webp);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .skatemap {
   background-image: url(../assets/skatemap.webp);
   background-position: right bottom;

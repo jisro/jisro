@@ -319,4 +319,11 @@ export default {
   transform: scale(1.05);
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.divers {
+  background-image: url(../assets/divers.webp);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 </style>

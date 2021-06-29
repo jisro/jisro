@@ -318,6 +318,14 @@ export default {
   background-repeat: no-repeat;
 }
 
+
+.divers {
+  background-image: url(../assets/divers.webp);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .sc {
   background-image: url(../assets/skatemapsc.png);
   background-position: center bottom;
