@@ -186,7 +186,7 @@
       <div class="desc w-4/5 lg:w-3/5 py-8 px-4">
         <div class="text-4xl font-bold">
           Over mij
-          <div class="text-base font-normal mt-4">
+          <div class="text-base font-normal mt-4 lg:text-lg">
             <p>
               Ik ben een 23 jarige UX/UI ontwerper uit Utrecht. Het liefst ben
               ik zoveel mogelijk op de hoogte van de nieuwste trends,
