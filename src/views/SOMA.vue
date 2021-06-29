@@ -14,7 +14,7 @@
             class="introtext text-quarternary text-5xl lg:text-4xl font-bold"
           >
             <p class="header text-4xl lg:text-5xl leading-tight">SOMA</p>
-            <p class="text-base font-normal mt-2">
+            <p class="text-base lg:text-lg font-normal mt-2">
               SOMA is een app die op een leuke en ongedwongen manier gebruikers
               helpt om hun lichaam beter te leren kennen.
             </p>
@@ -127,11 +127,11 @@
         class="over w-screen h-full flex justify-center items-center flex-col rounded-lg"
       >
         <div class="desc w-4/5 lg:w-2/5">
-          <div class="text-lg lg:text-2xl font-thin italic">
+          <div class="text-base lg:text-lg font-light italic">
             <br />Hoe kan er een product ontwikkeld worden dat zijn gebruikers
             stimuleert om lichamelijke sensaties te interpreteren, om zo op
             structurele basis het lichaamsbewustzijn te vergroten? <br /><br />
-            <div class="text-base not-italic">
+            <div class="text-base lg:text-lg not-italic">
               Deze webpagina wordt nog aangevuld. Hieronder is het volledige
               onderzoek te bekijken.
             </div>

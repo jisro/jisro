@@ -8,10 +8,10 @@
     <div class="intro h-full my-12 flex flex-col justify-between items-center">
       <div class="hi flex justify-center items-center w-4/5 lg:w-2/5">
         <div
-          class="desc md:items-end flex flex-col h-full w-3/5 items-center justify-start"
+          class="desc md:items-end flex flex-col h-full w-full items-center justify-start"
         >
           <div
-            class="introtext text-quarternary text-5xl lg:text-4xl font-bold w-full"
+            class="introtext text-quarternary text-5xl lg:text-4xl font-bold"
           >
             <p class="header text-4xl lg:text-5xl leading-tight">
               Diverse projecten
@@ -151,7 +151,7 @@
           </div>
         </div>
         <img
-          class="sc py-8 flex justify-center items-center flex-col rounded-lg mt-8"
+          class="sc py-8 flex justify-center items-center flex-col rounded-lg mt-8 lg:max-w-sm"
           src="../assets/ddsc.jpg"
         ></img>
       </div>
@@ -225,7 +225,7 @@ Dit beperkt de kracht van de ontwerper en maakt de applicatie gebruiksvriendelij
           </div>
         </div>
        <div
-          class="videoframe w-screen lg:w-3/5 h-72 lg:h-96 flex flex-grow p-1/2"
+          class="videoframe w-screen lg:w-3/5 h-72 lg:h-96 flex flex-grow p-1/2 justify-center items-center"
         >
           <iframe width="560" height="210" src="https://www.youtube.com/embed/WEjUYO4PZ2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>

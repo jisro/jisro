@@ -152,7 +152,7 @@
       </div>
       <div
         id="over"
-        class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg mt-8"
+        class="over w-screen h-full flex justify-center items-center flex-col rounded-lg"
       >
         <div class="desc w-3/5 flex-col"></div>
         <a

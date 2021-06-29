@@ -14,7 +14,7 @@
             class="introtext text-quarternary text-5xl lg:text-4xl font-bold"
           >
             <p class="header text-4xl lg:text-5xl leading-tight">POM</p>
-            <p class="text-lg font-thin mt-2">
+            <p class="text-base lg:text-lg font-normal mt-2">
               Pom is een praatmaatje voor laagtaalvaardige kinderen.
             </p>
           </div>
@@ -123,13 +123,13 @@
 
       <div
         id="over"
-        class="over w-screen h-full py-8 flex justify-center items-center flex-col rounded-lg"
+        class="over w-screen h-full pb-8 flex justify-center items-center flex-col rounded-lg"
       >
         <div class="desc w-4/5 lg:w-2/5">
-          <div class="text-lg lg:text-2xl font-thin">
+          <div class="text-base lg:text-lg">
             <br />In samenwerking met de VoorleesExpress heb ik samen met Sander
             een concept uitgewerkt voor laagtaalvaardige kinderen. <br /><br />
-            <div class="text-base">
+            <div class="text-base lg:text-lg">
               Deze webpagina wordt nog aangevuld. Hieronder is het volledige
               onderzoek te bekijken.
             </div>
