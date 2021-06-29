@@ -35,15 +35,13 @@ const routes = [
   },
 ];
 
-
-
 const router = new VueRouter({
   routes,
 });
 
-router.beforeEach(function (to, from, next) { 
+router.beforeEach(function (to, from, next) {
   setTimeout(() => {
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, 100);
   next();
 });

@@ -318,7 +318,6 @@ export default {
   background-repeat: no-repeat;
 }
 
-
 .divers {
   background-image: url(../assets/divers.webp);
   background-position: right bottom;
