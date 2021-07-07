@@ -314,6 +314,5 @@ export default {
   transition-duration: 0.2s;
   transition-timing-function: ease;
   transition-delay: 0s;
-  -moz-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 </style>
