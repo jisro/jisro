@@ -224,7 +224,7 @@
             <a
               class="hover:bg-quarternary hover:text-primary underline mb-1"
               href="mailto:joris-jansen@hotmail.com"
-              >hi@jisro.nl</a
+              >joris-jansen@hotmail.com</a
             >
             <br />
             <a
