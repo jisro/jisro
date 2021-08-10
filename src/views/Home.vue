@@ -188,7 +188,7 @@
           Over mij
           <div class="text-base font-normal mt-4 lg:text-lg">
             <p>
-              Ik ben een 23 jarige UX/UI ontwerper uit Utrecht. Het liefst ben
+              Ik ben een 24 jarige UX/UI ontwerper uit Utrecht. Het liefst ben
               ik zoveel mogelijk op de hoogte van de nieuwste trends,
               ontwikkelingen en tools. Niet alleen aangaande de vormgeving, maar
               ook op het gebied van ontwerpmethoden, front-end, psychologische
